@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/OGLInfoProj.dir/main.cpp.o -o OGLInfoProj 
+/usr/bin/c++ -g CMakeFiles/OGLInfoProj.dir/main.cpp.o CMakeFiles/OGLInfoProj.dir/src/glad.c.o -o OGLInfoProj  glfw-3.3.2/src/libglfw3.a glfw-3.3.2/src/libglfw3.a /usr/lib/libOpenGL.so /usr/lib/libGLX.so /usr/lib/libGLU.so /usr/lib/librt.so -lm -ldl /usr/lib/libX11.so -lpthread 

@@ -395,3 +395,115 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_407c3/fast && /usr/bin/make  -f CMakeFiles/cmTC_407c3.dir/build.make CMakeFiles/cmTC_407c3.dir/build
+make[1]: Entering directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_407c3.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_407c3.dir/CheckIncludeFile.c.o -c /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_407c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_407c3.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_407c3.dir/CheckIncludeFile.c.o -o cmTC_407c3 
+make[1]: Leaving directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_43a75/fast && /usr/bin/make  -f CMakeFiles/cmTC_43a75.dir/build.make CMakeFiles/cmTC_43a75.dir/build
+make[1]: Entering directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43a75.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_43a75.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_43a75
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43a75.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_43a75.dir/CheckFunctionExists.c.o -o cmTC_43a75  -lpthread 
+make[1]: Leaving directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib/libX11.so;/usr/lib/libXext.so passed with the following output:
+Change Dir: /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_67379/fast && /usr/bin/make  -f CMakeFiles/cmTC_67379.dir/build.make CMakeFiles/cmTC_67379.dir/build
+make[1]: Entering directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67379.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_67379.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_67379
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67379.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -rdynamic CMakeFiles/cmTC_67379.dir/CheckFunctionExists.c.o -o cmTC_67379  /usr/lib/libX11.so /usr/lib/libXext.so 
+make[1]: Leaving directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7276f/fast && /usr/bin/make  -f CMakeFiles/cmTC_7276f.dir/build.make CMakeFiles/cmTC_7276f.dir/build
+make[1]: Entering directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7276f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_7276f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7276f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7276f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_7276f.dir/CheckFunctionExists.c.o -o cmTC_7276f 
+make[1]: Leaving directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_085b7/fast && /usr/bin/make  -f CMakeFiles/cmTC_085b7.dir/build.make CMakeFiles/cmTC_085b7.dir/build
+make[1]: Entering directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_085b7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_085b7.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_085b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_085b7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect -rdynamic CMakeFiles/cmTC_085b7.dir/CheckFunctionExists.c.o -o cmTC_085b7 
+make[1]: Leaving directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_af114/fast && /usr/bin/make  -f CMakeFiles/cmTC_af114.dir/build.make CMakeFiles/cmTC_af114.dir/build
+make[1]: Entering directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af114.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_af114.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_af114
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af114.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove -rdynamic CMakeFiles/cmTC_af114.dir/CheckFunctionExists.c.o -o cmTC_af114 
+make[1]: Leaving directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_afdce/fast && /usr/bin/make  -f CMakeFiles/cmTC_afdce.dir/build.make CMakeFiles/cmTC_afdce.dir/build
+make[1]: Entering directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_afdce.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_afdce.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_afdce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afdce.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat -rdynamic CMakeFiles/cmTC_afdce.dir/CheckFunctionExists.c.o -o cmTC_afdce 
+make[1]: Leaving directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_04b83/fast && /usr/bin/make  -f CMakeFiles/cmTC_04b83.dir/build.make CMakeFiles/cmTC_04b83.dir/build
+make[1]: Entering directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_04b83.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_04b83.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_04b83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04b83.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -rdynamic CMakeFiles/cmTC_04b83.dir/CheckFunctionExists.c.o -o cmTC_04b83  -lICE 
+make[1]: Leaving directory '/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
