@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.18)
 project(OGLInfoProj)
 
 find_package(OpenGL REQUIRED)
-find_package(PkgConfig REQUIRED)
-pkg_search_module(GLFW REQUIRED glfw3)
 
 set(CMAKE_CXX_STANDARD 20)
 
