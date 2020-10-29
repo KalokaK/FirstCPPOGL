@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-// https://github.com/Konf/LearnOpenGL-CLion/blob/master/main.cpp example main code from here
+// https://github.com/Konf/LearnOpenGL-CLion/blob/master/main.cpp example main code from here..
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
