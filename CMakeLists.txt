@@ -8,7 +8,7 @@ pkg_search_module(GLFW REQUIRED glfw3)
 set(CMAKE_CXX_STANDARD 20)
 
 # Including GLAD
-add_subdirectory(glfw-3.3.2)
+add_subdirectory(glfw)
 include_directories(include)
 
 set(SOURCE_FILES main.cpp src/glad.c)

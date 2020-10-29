@@ -73,159 +73,159 @@ CMAKE_BINARY_DIR = /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/OGLInfoProj.dir/all
-all: glfw-3.3.2/all
+all: glfw/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: glfw-3.3.2/preinstall
+preinstall: glfw/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/OGLInfoProj.dir/clean
-clean: glfw-3.3.2/clean
+clean: glfw/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory glfw-3.3.2
+# Directory level rules for directory glfw
 
 # Recursive "all" directory target.
-glfw-3.3.2/all: glfw-3.3.2/src/all
-glfw-3.3.2/all: glfw-3.3.2/examples/all
-glfw-3.3.2/all: glfw-3.3.2/tests/all
+glfw/all: glfw/src/all
+glfw/all: glfw/examples/all
+glfw/all: glfw/tests/all
 
-.PHONY : glfw-3.3.2/all
+.PHONY : glfw/all
 
 # Recursive "preinstall" directory target.
-glfw-3.3.2/preinstall: glfw-3.3.2/src/preinstall
-glfw-3.3.2/preinstall: glfw-3.3.2/examples/preinstall
-glfw-3.3.2/preinstall: glfw-3.3.2/tests/preinstall
+glfw/preinstall: glfw/src/preinstall
+glfw/preinstall: glfw/examples/preinstall
+glfw/preinstall: glfw/tests/preinstall
 
-.PHONY : glfw-3.3.2/preinstall
+.PHONY : glfw/preinstall
 
 # Recursive "clean" directory target.
-glfw-3.3.2/clean: glfw-3.3.2/CMakeFiles/uninstall.dir/clean
-glfw-3.3.2/clean: glfw-3.3.2/src/clean
-glfw-3.3.2/clean: glfw-3.3.2/examples/clean
-glfw-3.3.2/clean: glfw-3.3.2/tests/clean
+glfw/clean: glfw/CMakeFiles/uninstall.dir/clean
+glfw/clean: glfw/src/clean
+glfw/clean: glfw/examples/clean
+glfw/clean: glfw/tests/clean
 
-.PHONY : glfw-3.3.2/clean
+.PHONY : glfw/clean
 
 #=============================================================================
-# Directory level rules for directory glfw-3.3.2/examples
+# Directory level rules for directory glfw/examples
 
 # Recursive "all" directory target.
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/boing.dir/all
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/gears.dir/all
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/heightmap.dir/all
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/sharing.dir/all
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/particles.dir/all
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/simple.dir/all
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/splitview.dir/all
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/offscreen.dir/all
-glfw-3.3.2/examples/all: glfw-3.3.2/examples/CMakeFiles/wave.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/boing.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/gears.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/heightmap.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/sharing.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/particles.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/splitview.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/triangle-opengl.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/offscreen.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/wave.dir/all
+glfw/examples/all: glfw/examples/CMakeFiles/windows.dir/all
 
-.PHONY : glfw-3.3.2/examples/all
+.PHONY : glfw/examples/all
 
 # Recursive "preinstall" directory target.
-glfw-3.3.2/examples/preinstall:
+glfw/examples/preinstall:
 
-.PHONY : glfw-3.3.2/examples/preinstall
+.PHONY : glfw/examples/preinstall
 
 # Recursive "clean" directory target.
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/boing.dir/clean
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/gears.dir/clean
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/heightmap.dir/clean
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/sharing.dir/clean
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/particles.dir/clean
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/simple.dir/clean
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/splitview.dir/clean
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/offscreen.dir/clean
-glfw-3.3.2/examples/clean: glfw-3.3.2/examples/CMakeFiles/wave.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/boing.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/gears.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/heightmap.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/sharing.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/particles.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/splitview.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/triangle-opengl.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/offscreen.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/wave.dir/clean
+glfw/examples/clean: glfw/examples/CMakeFiles/windows.dir/clean
 
-.PHONY : glfw-3.3.2/examples/clean
+.PHONY : glfw/examples/clean
 
 #=============================================================================
-# Directory level rules for directory glfw-3.3.2/src
+# Directory level rules for directory glfw/src
 
 # Recursive "all" directory target.
-glfw-3.3.2/src/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
+glfw/src/all: glfw/src/CMakeFiles/glfw.dir/all
 
-.PHONY : glfw-3.3.2/src/all
+.PHONY : glfw/src/all
 
 # Recursive "preinstall" directory target.
-glfw-3.3.2/src/preinstall:
+glfw/src/preinstall:
 
-.PHONY : glfw-3.3.2/src/preinstall
+.PHONY : glfw/src/preinstall
 
 # Recursive "clean" directory target.
-glfw-3.3.2/src/clean: glfw-3.3.2/src/CMakeFiles/glfw.dir/clean
+glfw/src/clean: glfw/src/CMakeFiles/glfw.dir/clean
 
-.PHONY : glfw-3.3.2/src/clean
+.PHONY : glfw/src/clean
 
 #=============================================================================
-# Directory level rules for directory glfw-3.3.2/tests
+# Directory level rules for directory glfw/tests
 
 # Recursive "all" directory target.
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/tearing.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/title.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/opacity.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/clipboard.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/msaa.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/iconify.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/reopen.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/gamma.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/monitors.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/windows.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/timeout.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/inputlag.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/threads.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/cursor.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/empty.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/icon.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/events.dir/all
-glfw-3.3.2/tests/all: glfw-3.3.2/tests/CMakeFiles/joysticks.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/window.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/triangle-vulkan.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/title.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/tearing.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/clipboard.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/msaa.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/glfwinfo.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/iconify.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/reopen.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/gamma.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/monitors.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/timeout.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/inputlag.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/threads.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/cursor.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/empty.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/icon.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/events.dir/all
+glfw/tests/all: glfw/tests/CMakeFiles/joysticks.dir/all
 
-.PHONY : glfw-3.3.2/tests/all
+.PHONY : glfw/tests/all
 
 # Recursive "preinstall" directory target.
-glfw-3.3.2/tests/preinstall:
+glfw/tests/preinstall:
 
-.PHONY : glfw-3.3.2/tests/preinstall
+.PHONY : glfw/tests/preinstall
 
 # Recursive "clean" directory target.
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/tearing.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/title.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/opacity.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/clipboard.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/msaa.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/iconify.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/reopen.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/gamma.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/monitors.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/windows.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/timeout.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/inputlag.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/threads.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/cursor.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/empty.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/icon.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/events.dir/clean
-glfw-3.3.2/tests/clean: glfw-3.3.2/tests/CMakeFiles/joysticks.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/window.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/triangle-vulkan.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/title.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/tearing.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/clipboard.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/msaa.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/glfwinfo.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/iconify.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/reopen.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/gamma.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/monitors.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/timeout.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/inputlag.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/threads.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/cursor.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/empty.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/icon.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/events.dir/clean
+glfw/tests/clean: glfw/tests/CMakeFiles/joysticks.dir/clean
 
-.PHONY : glfw-3.3.2/tests/clean
+.PHONY : glfw/tests/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/OGLInfoProj.dir
 
 # All Build rule for target.
-CMakeFiles/OGLInfoProj.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
+CMakeFiles/OGLInfoProj.dir/all: glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OGLInfoProj.dir/build.make CMakeFiles/OGLInfoProj.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OGLInfoProj.dir/build.make CMakeFiles/OGLInfoProj.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target OGLInfoProj"
@@ -249,841 +249,841 @@ CMakeFiles/OGLInfoProj.dir/clean:
 .PHONY : CMakeFiles/OGLInfoProj.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/CMakeFiles/uninstall.dir
+# Target rules for target glfw/CMakeFiles/uninstall.dir
 
 # All Build rule for target.
-glfw-3.3.2/CMakeFiles/uninstall.dir/all:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/CMakeFiles/uninstall.dir/build.make glfw-3.3.2/CMakeFiles/uninstall.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/CMakeFiles/uninstall.dir/build.make glfw-3.3.2/CMakeFiles/uninstall.dir/build
+glfw/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f glfw/CMakeFiles/uninstall.dir/build.make glfw/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/CMakeFiles/uninstall.dir/build.make glfw/CMakeFiles/uninstall.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num= "Built target uninstall"
-.PHONY : glfw-3.3.2/CMakeFiles/uninstall.dir/all
+.PHONY : glfw/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/CMakeFiles/uninstall.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/CMakeFiles/uninstall.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/CMakeFiles/uninstall.dir/rule
+.PHONY : glfw/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
-uninstall: glfw-3.3.2/CMakeFiles/uninstall.dir/rule
+uninstall: glfw/CMakeFiles/uninstall.dir/rule
 
 .PHONY : uninstall
 
 # clean rule for target.
-glfw-3.3.2/CMakeFiles/uninstall.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/CMakeFiles/uninstall.dir/build.make glfw-3.3.2/CMakeFiles/uninstall.dir/clean
-.PHONY : glfw-3.3.2/CMakeFiles/uninstall.dir/clean
+glfw/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/CMakeFiles/uninstall.dir/build.make glfw/CMakeFiles/uninstall.dir/clean
+.PHONY : glfw/CMakeFiles/uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/src/CMakeFiles/glfw.dir
+# Target rules for target glfw/src/CMakeFiles/glfw.dir
 
 # All Build rule for target.
-glfw-3.3.2/src/CMakeFiles/glfw.dir/all:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make glfw-3.3.2/src/CMakeFiles/glfw.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make glfw-3.3.2/src/CMakeFiles/glfw.dir/build
+glfw/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f glfw/src/CMakeFiles/glfw.dir/build.make glfw/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/src/CMakeFiles/glfw.dir/build.make glfw/src/CMakeFiles/glfw.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36 "Built target glfw"
-.PHONY : glfw-3.3.2/src/CMakeFiles/glfw.dir/all
+.PHONY : glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/src/CMakeFiles/glfw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/src/CMakeFiles/glfw.dir/rule
+.PHONY : glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
-glfw: glfw-3.3.2/src/CMakeFiles/glfw.dir/rule
+glfw: glfw/src/CMakeFiles/glfw.dir/rule
 
 .PHONY : glfw
 
 # clean rule for target.
-glfw-3.3.2/src/CMakeFiles/glfw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make glfw-3.3.2/src/CMakeFiles/glfw.dir/clean
-.PHONY : glfw-3.3.2/src/CMakeFiles/glfw.dir/clean
+glfw/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/src/CMakeFiles/glfw.dir/build.make glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : glfw/src/CMakeFiles/glfw.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/boing.dir
+# Target rules for target glfw/examples/CMakeFiles/boing.dir
 
 # All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/boing.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/boing.dir/build.make glfw-3.3.2/examples/CMakeFiles/boing.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/boing.dir/build.make glfw-3.3.2/examples/CMakeFiles/boing.dir/build
+glfw/examples/CMakeFiles/boing.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/boing.dir/build.make glfw/examples/CMakeFiles/boing.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/boing.dir/build.make glfw/examples/CMakeFiles/boing.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target boing"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/boing.dir/all
+.PHONY : glfw/examples/CMakeFiles/boing.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/boing.dir/rule: cmake_check_build_system
+glfw/examples/CMakeFiles/boing.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/boing.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/boing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/boing.dir/rule
+.PHONY : glfw/examples/CMakeFiles/boing.dir/rule
 
 # Convenience name for target.
-boing: glfw-3.3.2/examples/CMakeFiles/boing.dir/rule
+boing: glfw/examples/CMakeFiles/boing.dir/rule
 
 .PHONY : boing
 
 # clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/boing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/boing.dir/build.make glfw-3.3.2/examples/CMakeFiles/boing.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/boing.dir/clean
+glfw/examples/CMakeFiles/boing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/boing.dir/build.make glfw/examples/CMakeFiles/boing.dir/clean
+.PHONY : glfw/examples/CMakeFiles/boing.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/gears.dir
+# Target rules for target glfw/examples/CMakeFiles/gears.dir
 
 # All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/gears.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/gears.dir/build.make glfw-3.3.2/examples/CMakeFiles/gears.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/gears.dir/build.make glfw-3.3.2/examples/CMakeFiles/gears.dir/build
+glfw/examples/CMakeFiles/gears.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/gears.dir/build.make glfw/examples/CMakeFiles/gears.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/gears.dir/build.make glfw/examples/CMakeFiles/gears.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target gears"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/gears.dir/all
+.PHONY : glfw/examples/CMakeFiles/gears.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/gears.dir/rule: cmake_check_build_system
+glfw/examples/CMakeFiles/gears.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/gears.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/gears.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/gears.dir/rule
+.PHONY : glfw/examples/CMakeFiles/gears.dir/rule
 
 # Convenience name for target.
-gears: glfw-3.3.2/examples/CMakeFiles/gears.dir/rule
+gears: glfw/examples/CMakeFiles/gears.dir/rule
 
 .PHONY : gears
 
 # clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/gears.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/gears.dir/build.make glfw-3.3.2/examples/CMakeFiles/gears.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/gears.dir/clean
+glfw/examples/CMakeFiles/gears.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/gears.dir/build.make glfw/examples/CMakeFiles/gears.dir/clean
+.PHONY : glfw/examples/CMakeFiles/gears.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/heightmap.dir
+# Target rules for target glfw/examples/CMakeFiles/heightmap.dir
 
 # All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/heightmap.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/heightmap.dir/build.make glfw-3.3.2/examples/CMakeFiles/heightmap.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/heightmap.dir/build.make glfw-3.3.2/examples/CMakeFiles/heightmap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=41,42,43 "Built target heightmap"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/heightmap.dir/all
+glfw/examples/CMakeFiles/heightmap.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/heightmap.dir/build.make glfw/examples/CMakeFiles/heightmap.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/heightmap.dir/build.make glfw/examples/CMakeFiles/heightmap.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=42,43 "Built target heightmap"
+.PHONY : glfw/examples/CMakeFiles/heightmap.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/heightmap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/heightmap.dir/all
+glfw/examples/CMakeFiles/heightmap.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/heightmap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/heightmap.dir/rule
+.PHONY : glfw/examples/CMakeFiles/heightmap.dir/rule
 
 # Convenience name for target.
-heightmap: glfw-3.3.2/examples/CMakeFiles/heightmap.dir/rule
+heightmap: glfw/examples/CMakeFiles/heightmap.dir/rule
 
 .PHONY : heightmap
 
 # clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/heightmap.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/heightmap.dir/build.make glfw-3.3.2/examples/CMakeFiles/heightmap.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/heightmap.dir/clean
+glfw/examples/CMakeFiles/heightmap.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/heightmap.dir/build.make glfw/examples/CMakeFiles/heightmap.dir/clean
+.PHONY : glfw/examples/CMakeFiles/heightmap.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/sharing.dir
+# Target rules for target glfw/examples/CMakeFiles/sharing.dir
 
 # All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/sharing.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/sharing.dir/build.make glfw-3.3.2/examples/CMakeFiles/sharing.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/sharing.dir/build.make glfw-3.3.2/examples/CMakeFiles/sharing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=74,75 "Built target sharing"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/sharing.dir/all
+glfw/examples/CMakeFiles/sharing.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/sharing.dir/build.make glfw/examples/CMakeFiles/sharing.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/sharing.dir/build.make glfw/examples/CMakeFiles/sharing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=72,73 "Built target sharing"
+.PHONY : glfw/examples/CMakeFiles/sharing.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/sharing.dir/rule: cmake_check_build_system
+glfw/examples/CMakeFiles/sharing.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/sharing.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/sharing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/sharing.dir/rule
+.PHONY : glfw/examples/CMakeFiles/sharing.dir/rule
 
 # Convenience name for target.
-sharing: glfw-3.3.2/examples/CMakeFiles/sharing.dir/rule
+sharing: glfw/examples/CMakeFiles/sharing.dir/rule
 
 .PHONY : sharing
 
 # clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/sharing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/sharing.dir/build.make glfw-3.3.2/examples/CMakeFiles/sharing.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/sharing.dir/clean
+glfw/examples/CMakeFiles/sharing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/sharing.dir/build.make glfw/examples/CMakeFiles/sharing.dir/clean
+.PHONY : glfw/examples/CMakeFiles/sharing.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/particles.dir
+# Target rules for target glfw/examples/CMakeFiles/particles.dir
 
 # All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/particles.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/particles.dir/build.make glfw-3.3.2/examples/CMakeFiles/particles.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/particles.dir/build.make glfw-3.3.2/examples/CMakeFiles/particles.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=67,68,69,70 "Built target particles"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/particles.dir/all
+glfw/examples/CMakeFiles/particles.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/particles.dir/build.make glfw/examples/CMakeFiles/particles.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/particles.dir/build.make glfw/examples/CMakeFiles/particles.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=65,66,67,68 "Built target particles"
+.PHONY : glfw/examples/CMakeFiles/particles.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/particles.dir/rule: cmake_check_build_system
+glfw/examples/CMakeFiles/particles.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 18
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/particles.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/particles.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/particles.dir/rule
+.PHONY : glfw/examples/CMakeFiles/particles.dir/rule
 
 # Convenience name for target.
-particles: glfw-3.3.2/examples/CMakeFiles/particles.dir/rule
+particles: glfw/examples/CMakeFiles/particles.dir/rule
 
 .PHONY : particles
 
 # clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/particles.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/particles.dir/build.make glfw-3.3.2/examples/CMakeFiles/particles.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/particles.dir/clean
+glfw/examples/CMakeFiles/particles.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/particles.dir/build.make glfw/examples/CMakeFiles/particles.dir/clean
+.PHONY : glfw/examples/CMakeFiles/particles.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/simple.dir
+# Target rules for target glfw/examples/CMakeFiles/splitview.dir
 
 # All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/simple.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/simple.dir/build.make glfw-3.3.2/examples/CMakeFiles/simple.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/simple.dir/build.make glfw-3.3.2/examples/CMakeFiles/simple.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=76,77,78 "Built target simple"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/simple.dir/all
+glfw/examples/CMakeFiles/splitview.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/splitview.dir/build.make glfw/examples/CMakeFiles/splitview.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/splitview.dir/build.make glfw/examples/CMakeFiles/splitview.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=74,75,76 "Built target splitview"
+.PHONY : glfw/examples/CMakeFiles/splitview.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/simple.dir/rule: cmake_check_build_system
+glfw/examples/CMakeFiles/splitview.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/simple.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/splitview.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/simple.dir/rule
+.PHONY : glfw/examples/CMakeFiles/splitview.dir/rule
 
 # Convenience name for target.
-simple: glfw-3.3.2/examples/CMakeFiles/simple.dir/rule
-
-.PHONY : simple
-
-# clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/simple.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/simple.dir/build.make glfw-3.3.2/examples/CMakeFiles/simple.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/simple.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/splitview.dir
-
-# All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/splitview.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/splitview.dir/build.make glfw-3.3.2/examples/CMakeFiles/splitview.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/splitview.dir/build.make glfw-3.3.2/examples/CMakeFiles/splitview.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=79,80 "Built target splitview"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/splitview.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/splitview.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/splitview.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/splitview.dir/rule
-
-# Convenience name for target.
-splitview: glfw-3.3.2/examples/CMakeFiles/splitview.dir/rule
+splitview: glfw/examples/CMakeFiles/splitview.dir/rule
 
 .PHONY : splitview
 
 # clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/splitview.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/splitview.dir/build.make glfw-3.3.2/examples/CMakeFiles/splitview.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/splitview.dir/clean
+glfw/examples/CMakeFiles/splitview.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/splitview.dir/build.make glfw/examples/CMakeFiles/splitview.dir/clean
+.PHONY : glfw/examples/CMakeFiles/splitview.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/offscreen.dir
+# Target rules for target glfw/examples/CMakeFiles/triangle-opengl.dir
 
 # All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/offscreen.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/offscreen.dir/build.make glfw-3.3.2/examples/CMakeFiles/offscreen.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/offscreen.dir/build.make glfw-3.3.2/examples/CMakeFiles/offscreen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=62,63,64 "Built target offscreen"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/offscreen.dir/all
+glfw/examples/CMakeFiles/triangle-opengl.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/triangle-opengl.dir/build.make glfw/examples/CMakeFiles/triangle-opengl.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/triangle-opengl.dir/build.make glfw/examples/CMakeFiles/triangle-opengl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=88,89 "Built target triangle-opengl"
+.PHONY : glfw/examples/CMakeFiles/triangle-opengl.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/offscreen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/offscreen.dir/all
+glfw/examples/CMakeFiles/triangle-opengl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/triangle-opengl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/offscreen.dir/rule
+.PHONY : glfw/examples/CMakeFiles/triangle-opengl.dir/rule
 
 # Convenience name for target.
-offscreen: glfw-3.3.2/examples/CMakeFiles/offscreen.dir/rule
+triangle-opengl: glfw/examples/CMakeFiles/triangle-opengl.dir/rule
+
+.PHONY : triangle-opengl
+
+# clean rule for target.
+glfw/examples/CMakeFiles/triangle-opengl.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/triangle-opengl.dir/build.make glfw/examples/CMakeFiles/triangle-opengl.dir/clean
+.PHONY : glfw/examples/CMakeFiles/triangle-opengl.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/examples/CMakeFiles/offscreen.dir
+
+# All Build rule for target.
+glfw/examples/CMakeFiles/offscreen.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/offscreen.dir/build.make glfw/examples/CMakeFiles/offscreen.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/offscreen.dir/build.make glfw/examples/CMakeFiles/offscreen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=63,64 "Built target offscreen"
+.PHONY : glfw/examples/CMakeFiles/offscreen.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/examples/CMakeFiles/offscreen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/offscreen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/examples/CMakeFiles/offscreen.dir/rule
+
+# Convenience name for target.
+offscreen: glfw/examples/CMakeFiles/offscreen.dir/rule
 
 .PHONY : offscreen
 
 # clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/offscreen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/offscreen.dir/build.make glfw-3.3.2/examples/CMakeFiles/offscreen.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/offscreen.dir/clean
+glfw/examples/CMakeFiles/offscreen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/offscreen.dir/build.make glfw/examples/CMakeFiles/offscreen.dir/clean
+.PHONY : glfw/examples/CMakeFiles/offscreen.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/examples/CMakeFiles/wave.dir
+# Target rules for target glfw/examples/CMakeFiles/wave.dir
 
 # All Build rule for target.
-glfw-3.3.2/examples/CMakeFiles/wave.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/wave.dir/build.make glfw-3.3.2/examples/CMakeFiles/wave.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/wave.dir/build.make glfw-3.3.2/examples/CMakeFiles/wave.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=95,96 "Built target wave"
-.PHONY : glfw-3.3.2/examples/CMakeFiles/wave.dir/all
+glfw/examples/CMakeFiles/wave.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/wave.dir/build.make glfw/examples/CMakeFiles/wave.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/wave.dir/build.make glfw/examples/CMakeFiles/wave.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=93,94 "Built target wave"
+.PHONY : glfw/examples/CMakeFiles/wave.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/examples/CMakeFiles/wave.dir/rule: cmake_check_build_system
+glfw/examples/CMakeFiles/wave.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/examples/CMakeFiles/wave.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/wave.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/examples/CMakeFiles/wave.dir/rule
+.PHONY : glfw/examples/CMakeFiles/wave.dir/rule
 
 # Convenience name for target.
-wave: glfw-3.3.2/examples/CMakeFiles/wave.dir/rule
+wave: glfw/examples/CMakeFiles/wave.dir/rule
 
 .PHONY : wave
 
 # clean rule for target.
-glfw-3.3.2/examples/CMakeFiles/wave.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/examples/CMakeFiles/wave.dir/build.make glfw-3.3.2/examples/CMakeFiles/wave.dir/clean
-.PHONY : glfw-3.3.2/examples/CMakeFiles/wave.dir/clean
+glfw/examples/CMakeFiles/wave.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/wave.dir/build.make glfw/examples/CMakeFiles/wave.dir/clean
+.PHONY : glfw/examples/CMakeFiles/wave.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir
+# Target rules for target glfw/examples/CMakeFiles/windows.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/build.make glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/build.make glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=92,93,94 "Built target triangle-vulkan"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/all
+glfw/examples/CMakeFiles/windows.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/windows.dir/build.make glfw/examples/CMakeFiles/windows.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/windows.dir/build.make glfw/examples/CMakeFiles/windows.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=98,99,100 "Built target windows"
+.PHONY : glfw/examples/CMakeFiles/windows.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/rule: cmake_check_build_system
+glfw/examples/CMakeFiles/windows.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/examples/CMakeFiles/windows.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/rule
+.PHONY : glfw/examples/CMakeFiles/windows.dir/rule
 
 # Convenience name for target.
-triangle-vulkan: glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/rule
-
-.PHONY : triangle-vulkan
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/build.make glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/triangle-vulkan.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/tearing.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/tearing.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/tearing.dir/build.make glfw-3.3.2/tests/CMakeFiles/tearing.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/tearing.dir/build.make glfw-3.3.2/tests/CMakeFiles/tearing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=81,82,83 "Built target tearing"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/tearing.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/tearing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/tearing.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/tearing.dir/rule
-
-# Convenience name for target.
-tearing: glfw-3.3.2/tests/CMakeFiles/tearing.dir/rule
-
-.PHONY : tearing
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/tearing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/tearing.dir/build.make glfw-3.3.2/tests/CMakeFiles/tearing.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/tearing.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/title.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/title.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/title.dir/build.make glfw-3.3.2/tests/CMakeFiles/title.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/title.dir/build.make glfw-3.3.2/tests/CMakeFiles/title.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=90,91 "Built target title"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/title.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/title.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/title.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/title.dir/rule
-
-# Convenience name for target.
-title: glfw-3.3.2/tests/CMakeFiles/title.dir/rule
-
-.PHONY : title
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/title.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/title.dir/build.make glfw-3.3.2/tests/CMakeFiles/title.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/title.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/opacity.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/opacity.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/opacity.dir/build.make glfw-3.3.2/tests/CMakeFiles/opacity.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/opacity.dir/build.make glfw-3.3.2/tests/CMakeFiles/opacity.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=65,66 "Built target opacity"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/opacity.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/opacity.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/opacity.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/opacity.dir/rule
-
-# Convenience name for target.
-opacity: glfw-3.3.2/tests/CMakeFiles/opacity.dir/rule
-
-.PHONY : opacity
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/opacity.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/opacity.dir/build.make glfw-3.3.2/tests/CMakeFiles/opacity.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/opacity.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/clipboard.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/clipboard.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/clipboard.dir/build.make glfw-3.3.2/tests/CMakeFiles/clipboard.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/clipboard.dir/build.make glfw-3.3.2/tests/CMakeFiles/clipboard.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=6,7,8 "Built target clipboard"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/clipboard.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/clipboard.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/clipboard.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/clipboard.dir/rule
-
-# Convenience name for target.
-clipboard: glfw-3.3.2/tests/CMakeFiles/clipboard.dir/rule
-
-.PHONY : clipboard
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/clipboard.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/clipboard.dir/build.make glfw-3.3.2/tests/CMakeFiles/clipboard.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/clipboard.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/msaa.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/msaa.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/msaa.dir/build.make glfw-3.3.2/tests/CMakeFiles/msaa.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/msaa.dir/build.make glfw-3.3.2/tests/CMakeFiles/msaa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=59,60,61 "Built target msaa"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/msaa.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/msaa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/msaa.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/msaa.dir/rule
-
-# Convenience name for target.
-msaa: glfw-3.3.2/tests/CMakeFiles/msaa.dir/rule
-
-.PHONY : msaa
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/msaa.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/msaa.dir/build.make glfw-3.3.2/tests/CMakeFiles/msaa.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/msaa.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/build.make glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/build.make glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=37,38,39,40 "Built target glfwinfo"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 18
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/rule
-
-# Convenience name for target.
-glfwinfo: glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/rule
-
-.PHONY : glfwinfo
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/build.make glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/glfwinfo.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/iconify.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/iconify.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/iconify.dir/build.make glfw-3.3.2/tests/CMakeFiles/iconify.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/iconify.dir/build.make glfw-3.3.2/tests/CMakeFiles/iconify.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=46,47,48,49 "Built target iconify"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/iconify.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/iconify.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 18
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/iconify.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/iconify.dir/rule
-
-# Convenience name for target.
-iconify: glfw-3.3.2/tests/CMakeFiles/iconify.dir/rule
-
-.PHONY : iconify
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/iconify.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/iconify.dir/build.make glfw-3.3.2/tests/CMakeFiles/iconify.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/iconify.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/reopen.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/reopen.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/reopen.dir/build.make glfw-3.3.2/tests/CMakeFiles/reopen.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/reopen.dir/build.make glfw-3.3.2/tests/CMakeFiles/reopen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=71,72,73 "Built target reopen"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/reopen.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/reopen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/reopen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/reopen.dir/rule
-
-# Convenience name for target.
-reopen: glfw-3.3.2/tests/CMakeFiles/reopen.dir/rule
-
-.PHONY : reopen
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/reopen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/reopen.dir/build.make glfw-3.3.2/tests/CMakeFiles/reopen.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/reopen.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/gamma.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/gamma.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/gamma.dir/build.make glfw-3.3.2/tests/CMakeFiles/gamma.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/gamma.dir/build.make glfw-3.3.2/tests/CMakeFiles/gamma.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=18,19,20 "Built target gamma"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/gamma.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/gamma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/gamma.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/gamma.dir/rule
-
-# Convenience name for target.
-gamma: glfw-3.3.2/tests/CMakeFiles/gamma.dir/rule
-
-.PHONY : gamma
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/gamma.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/gamma.dir/build.make glfw-3.3.2/tests/CMakeFiles/gamma.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/gamma.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/monitors.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/monitors.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/monitors.dir/build.make glfw-3.3.2/tests/CMakeFiles/monitors.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/monitors.dir/build.make glfw-3.3.2/tests/CMakeFiles/monitors.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=56,57,58 "Built target monitors"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/monitors.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/monitors.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/monitors.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/monitors.dir/rule
-
-# Convenience name for target.
-monitors: glfw-3.3.2/tests/CMakeFiles/monitors.dir/rule
-
-.PHONY : monitors
-
-# clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/monitors.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/monitors.dir/build.make glfw-3.3.2/tests/CMakeFiles/monitors.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/monitors.dir/clean
-
-#=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/windows.dir
-
-# All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/windows.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/windows.dir/build.make glfw-3.3.2/tests/CMakeFiles/windows.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/windows.dir/build.make glfw-3.3.2/tests/CMakeFiles/windows.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=97,98,99,100 "Built target windows"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/windows.dir/all
-
-# Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/windows.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 18
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/windows.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/windows.dir/rule
-
-# Convenience name for target.
-windows: glfw-3.3.2/tests/CMakeFiles/windows.dir/rule
+windows: glfw/examples/CMakeFiles/windows.dir/rule
 
 .PHONY : windows
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/windows.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/windows.dir/build.make glfw-3.3.2/tests/CMakeFiles/windows.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/windows.dir/clean
+glfw/examples/CMakeFiles/windows.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/examples/CMakeFiles/windows.dir/build.make glfw/examples/CMakeFiles/windows.dir/clean
+.PHONY : glfw/examples/CMakeFiles/windows.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/timeout.dir
+# Target rules for target glfw/tests/CMakeFiles/window.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/timeout.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/timeout.dir/build.make glfw-3.3.2/tests/CMakeFiles/timeout.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/timeout.dir/build.make glfw-3.3.2/tests/CMakeFiles/timeout.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=87,88,89 "Built target timeout"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/timeout.dir/all
+glfw/tests/CMakeFiles/window.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/window.dir/build.make glfw/tests/CMakeFiles/window.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/window.dir/build.make glfw/tests/CMakeFiles/window.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=95,96,97 "Built target window"
+.PHONY : glfw/tests/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/timeout.dir/rule: cmake_check_build_system
+glfw/tests/CMakeFiles/window.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/timeout.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/timeout.dir/rule
+.PHONY : glfw/tests/CMakeFiles/window.dir/rule
 
 # Convenience name for target.
-timeout: glfw-3.3.2/tests/CMakeFiles/timeout.dir/rule
+window: glfw/tests/CMakeFiles/window.dir/rule
+
+.PHONY : window
+
+# clean rule for target.
+glfw/tests/CMakeFiles/window.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/window.dir/build.make glfw/tests/CMakeFiles/window.dir/clean
+.PHONY : glfw/tests/CMakeFiles/window.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/triangle-vulkan.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/triangle-vulkan.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/triangle-vulkan.dir/build.make glfw/tests/CMakeFiles/triangle-vulkan.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/triangle-vulkan.dir/build.make glfw/tests/CMakeFiles/triangle-vulkan.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=90,91,92 "Built target triangle-vulkan"
+.PHONY : glfw/tests/CMakeFiles/triangle-vulkan.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/triangle-vulkan.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/triangle-vulkan.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/triangle-vulkan.dir/rule
+
+# Convenience name for target.
+triangle-vulkan: glfw/tests/CMakeFiles/triangle-vulkan.dir/rule
+
+.PHONY : triangle-vulkan
+
+# clean rule for target.
+glfw/tests/CMakeFiles/triangle-vulkan.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/triangle-vulkan.dir/build.make glfw/tests/CMakeFiles/triangle-vulkan.dir/clean
+.PHONY : glfw/tests/CMakeFiles/triangle-vulkan.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/title.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/title.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/title.dir/build.make glfw/tests/CMakeFiles/title.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/title.dir/build.make glfw/tests/CMakeFiles/title.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=85,86,87 "Built target title"
+.PHONY : glfw/tests/CMakeFiles/title.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/title.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/title.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/title.dir/rule
+
+# Convenience name for target.
+title: glfw/tests/CMakeFiles/title.dir/rule
+
+.PHONY : title
+
+# clean rule for target.
+glfw/tests/CMakeFiles/title.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/title.dir/build.make glfw/tests/CMakeFiles/title.dir/clean
+.PHONY : glfw/tests/CMakeFiles/title.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/tearing.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/tearing.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/tearing.dir/build.make glfw/tests/CMakeFiles/tearing.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/tearing.dir/build.make glfw/tests/CMakeFiles/tearing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=77,78 "Built target tearing"
+.PHONY : glfw/tests/CMakeFiles/tearing.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/tearing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/tearing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/tearing.dir/rule
+
+# Convenience name for target.
+tearing: glfw/tests/CMakeFiles/tearing.dir/rule
+
+.PHONY : tearing
+
+# clean rule for target.
+glfw/tests/CMakeFiles/tearing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/tearing.dir/build.make glfw/tests/CMakeFiles/tearing.dir/clean
+.PHONY : glfw/tests/CMakeFiles/tearing.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/clipboard.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/clipboard.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/clipboard.dir/build.make glfw/tests/CMakeFiles/clipboard.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/clipboard.dir/build.make glfw/tests/CMakeFiles/clipboard.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=6,7,8 "Built target clipboard"
+.PHONY : glfw/tests/CMakeFiles/clipboard.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/clipboard.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/clipboard.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/clipboard.dir/rule
+
+# Convenience name for target.
+clipboard: glfw/tests/CMakeFiles/clipboard.dir/rule
+
+.PHONY : clipboard
+
+# clean rule for target.
+glfw/tests/CMakeFiles/clipboard.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/clipboard.dir/build.make glfw/tests/CMakeFiles/clipboard.dir/clean
+.PHONY : glfw/tests/CMakeFiles/clipboard.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/msaa.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/msaa.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/msaa.dir/build.make glfw/tests/CMakeFiles/msaa.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/msaa.dir/build.make glfw/tests/CMakeFiles/msaa.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=59,60,61,62 "Built target msaa"
+.PHONY : glfw/tests/CMakeFiles/msaa.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/msaa.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/msaa.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/msaa.dir/rule
+
+# Convenience name for target.
+msaa: glfw/tests/CMakeFiles/msaa.dir/rule
+
+.PHONY : msaa
+
+# clean rule for target.
+glfw/tests/CMakeFiles/msaa.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/msaa.dir/build.make glfw/tests/CMakeFiles/msaa.dir/clean
+.PHONY : glfw/tests/CMakeFiles/msaa.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/glfwinfo.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/glfwinfo.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/glfwinfo.dir/build.make glfw/tests/CMakeFiles/glfwinfo.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/glfwinfo.dir/build.make glfw/tests/CMakeFiles/glfwinfo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=37,38,39,40,41 "Built target glfwinfo"
+.PHONY : glfw/tests/CMakeFiles/glfwinfo.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/glfwinfo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 19
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/glfwinfo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/glfwinfo.dir/rule
+
+# Convenience name for target.
+glfwinfo: glfw/tests/CMakeFiles/glfwinfo.dir/rule
+
+.PHONY : glfwinfo
+
+# clean rule for target.
+glfw/tests/CMakeFiles/glfwinfo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/glfwinfo.dir/build.make glfw/tests/CMakeFiles/glfwinfo.dir/clean
+.PHONY : glfw/tests/CMakeFiles/glfwinfo.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/iconify.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/iconify.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/iconify.dir/build.make glfw/tests/CMakeFiles/iconify.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/iconify.dir/build.make glfw/tests/CMakeFiles/iconify.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=47,48,49 "Built target iconify"
+.PHONY : glfw/tests/CMakeFiles/iconify.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/iconify.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/iconify.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/iconify.dir/rule
+
+# Convenience name for target.
+iconify: glfw/tests/CMakeFiles/iconify.dir/rule
+
+.PHONY : iconify
+
+# clean rule for target.
+glfw/tests/CMakeFiles/iconify.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/iconify.dir/build.make glfw/tests/CMakeFiles/iconify.dir/clean
+.PHONY : glfw/tests/CMakeFiles/iconify.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/reopen.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/reopen.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/reopen.dir/build.make glfw/tests/CMakeFiles/reopen.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/reopen.dir/build.make glfw/tests/CMakeFiles/reopen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=69,70,71 "Built target reopen"
+.PHONY : glfw/tests/CMakeFiles/reopen.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/reopen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/reopen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/reopen.dir/rule
+
+# Convenience name for target.
+reopen: glfw/tests/CMakeFiles/reopen.dir/rule
+
+.PHONY : reopen
+
+# clean rule for target.
+glfw/tests/CMakeFiles/reopen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/reopen.dir/build.make glfw/tests/CMakeFiles/reopen.dir/clean
+.PHONY : glfw/tests/CMakeFiles/reopen.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/gamma.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/gamma.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/gamma.dir/build.make glfw/tests/CMakeFiles/gamma.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/gamma.dir/build.make glfw/tests/CMakeFiles/gamma.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=18,19,20 "Built target gamma"
+.PHONY : glfw/tests/CMakeFiles/gamma.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/gamma.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/gamma.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/gamma.dir/rule
+
+# Convenience name for target.
+gamma: glfw/tests/CMakeFiles/gamma.dir/rule
+
+.PHONY : gamma
+
+# clean rule for target.
+glfw/tests/CMakeFiles/gamma.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/gamma.dir/build.make glfw/tests/CMakeFiles/gamma.dir/clean
+.PHONY : glfw/tests/CMakeFiles/gamma.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/monitors.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/monitors.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/monitors.dir/build.make glfw/tests/CMakeFiles/monitors.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/monitors.dir/build.make glfw/tests/CMakeFiles/monitors.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=56,57,58 "Built target monitors"
+.PHONY : glfw/tests/CMakeFiles/monitors.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/monitors.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/monitors.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/monitors.dir/rule
+
+# Convenience name for target.
+monitors: glfw/tests/CMakeFiles/monitors.dir/rule
+
+.PHONY : monitors
+
+# clean rule for target.
+glfw/tests/CMakeFiles/monitors.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/monitors.dir/build.make glfw/tests/CMakeFiles/monitors.dir/clean
+.PHONY : glfw/tests/CMakeFiles/monitors.dir/clean
+
+#=============================================================================
+# Target rules for target glfw/tests/CMakeFiles/timeout.dir
+
+# All Build rule for target.
+glfw/tests/CMakeFiles/timeout.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/timeout.dir/build.make glfw/tests/CMakeFiles/timeout.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/timeout.dir/build.make glfw/tests/CMakeFiles/timeout.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=83,84 "Built target timeout"
+.PHONY : glfw/tests/CMakeFiles/timeout.dir/all
+
+# Build rule for subdir invocation for target.
+glfw/tests/CMakeFiles/timeout.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/timeout.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
+.PHONY : glfw/tests/CMakeFiles/timeout.dir/rule
+
+# Convenience name for target.
+timeout: glfw/tests/CMakeFiles/timeout.dir/rule
 
 .PHONY : timeout
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/timeout.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/timeout.dir/build.make glfw-3.3.2/tests/CMakeFiles/timeout.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/timeout.dir/clean
+glfw/tests/CMakeFiles/timeout.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/timeout.dir/build.make glfw/tests/CMakeFiles/timeout.dir/clean
+.PHONY : glfw/tests/CMakeFiles/timeout.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/inputlag.dir
+# Target rules for target glfw/tests/CMakeFiles/inputlag.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/inputlag.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/inputlag.dir/build.make glfw-3.3.2/tests/CMakeFiles/inputlag.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/inputlag.dir/build.make glfw-3.3.2/tests/CMakeFiles/inputlag.dir/build
+glfw/tests/CMakeFiles/inputlag.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/inputlag.dir/build.make glfw/tests/CMakeFiles/inputlag.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/inputlag.dir/build.make glfw/tests/CMakeFiles/inputlag.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=50,51,52 "Built target inputlag"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/inputlag.dir/all
+.PHONY : glfw/tests/CMakeFiles/inputlag.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/inputlag.dir/rule: cmake_check_build_system
+glfw/tests/CMakeFiles/inputlag.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/inputlag.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/inputlag.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/inputlag.dir/rule
+.PHONY : glfw/tests/CMakeFiles/inputlag.dir/rule
 
 # Convenience name for target.
-inputlag: glfw-3.3.2/tests/CMakeFiles/inputlag.dir/rule
+inputlag: glfw/tests/CMakeFiles/inputlag.dir/rule
 
 .PHONY : inputlag
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/inputlag.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/inputlag.dir/build.make glfw-3.3.2/tests/CMakeFiles/inputlag.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/inputlag.dir/clean
+glfw/tests/CMakeFiles/inputlag.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/inputlag.dir/build.make glfw/tests/CMakeFiles/inputlag.dir/clean
+.PHONY : glfw/tests/CMakeFiles/inputlag.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/threads.dir
+# Target rules for target glfw/tests/CMakeFiles/threads.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/threads.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/threads.dir/build.make glfw-3.3.2/tests/CMakeFiles/threads.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/threads.dir/build.make glfw-3.3.2/tests/CMakeFiles/threads.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=84,85,86 "Built target threads"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/threads.dir/all
+glfw/tests/CMakeFiles/threads.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/threads.dir/build.make glfw/tests/CMakeFiles/threads.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/threads.dir/build.make glfw/tests/CMakeFiles/threads.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=79,80,81,82 "Built target threads"
+.PHONY : glfw/tests/CMakeFiles/threads.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/threads.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/threads.dir/all
+glfw/tests/CMakeFiles/threads.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/threads.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/threads.dir/rule
+.PHONY : glfw/tests/CMakeFiles/threads.dir/rule
 
 # Convenience name for target.
-threads: glfw-3.3.2/tests/CMakeFiles/threads.dir/rule
+threads: glfw/tests/CMakeFiles/threads.dir/rule
 
 .PHONY : threads
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/threads.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/threads.dir/build.make glfw-3.3.2/tests/CMakeFiles/threads.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/threads.dir/clean
+glfw/tests/CMakeFiles/threads.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/threads.dir/build.make glfw/tests/CMakeFiles/threads.dir/clean
+.PHONY : glfw/tests/CMakeFiles/threads.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/cursor.dir
+# Target rules for target glfw/tests/CMakeFiles/cursor.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/cursor.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/cursor.dir/build.make glfw-3.3.2/tests/CMakeFiles/cursor.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/cursor.dir/build.make glfw-3.3.2/tests/CMakeFiles/cursor.dir/build
+glfw/tests/CMakeFiles/cursor.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/cursor.dir/build.make glfw/tests/CMakeFiles/cursor.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/cursor.dir/build.make glfw/tests/CMakeFiles/cursor.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target cursor"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/cursor.dir/all
+.PHONY : glfw/tests/CMakeFiles/cursor.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/cursor.dir/rule: cmake_check_build_system
+glfw/tests/CMakeFiles/cursor.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/cursor.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/cursor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/cursor.dir/rule
+.PHONY : glfw/tests/CMakeFiles/cursor.dir/rule
 
 # Convenience name for target.
-cursor: glfw-3.3.2/tests/CMakeFiles/cursor.dir/rule
+cursor: glfw/tests/CMakeFiles/cursor.dir/rule
 
 .PHONY : cursor
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/cursor.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/cursor.dir/build.make glfw-3.3.2/tests/CMakeFiles/cursor.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/cursor.dir/clean
+glfw/tests/CMakeFiles/cursor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/cursor.dir/build.make glfw/tests/CMakeFiles/cursor.dir/clean
+.PHONY : glfw/tests/CMakeFiles/cursor.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/empty.dir
+# Target rules for target glfw/tests/CMakeFiles/empty.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/empty.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/empty.dir/build.make glfw-3.3.2/tests/CMakeFiles/empty.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/empty.dir/build.make glfw-3.3.2/tests/CMakeFiles/empty.dir/build
+glfw/tests/CMakeFiles/empty.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/empty.dir/build.make glfw/tests/CMakeFiles/empty.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/empty.dir/build.make glfw/tests/CMakeFiles/empty.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=11,12,13,14 "Built target empty"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/empty.dir/all
+.PHONY : glfw/tests/CMakeFiles/empty.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/empty.dir/rule: cmake_check_build_system
+glfw/tests/CMakeFiles/empty.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 18
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/empty.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/empty.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/empty.dir/rule
+.PHONY : glfw/tests/CMakeFiles/empty.dir/rule
 
 # Convenience name for target.
-empty: glfw-3.3.2/tests/CMakeFiles/empty.dir/rule
+empty: glfw/tests/CMakeFiles/empty.dir/rule
 
 .PHONY : empty
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/empty.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/empty.dir/build.make glfw-3.3.2/tests/CMakeFiles/empty.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/empty.dir/clean
+glfw/tests/CMakeFiles/empty.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/empty.dir/build.make glfw/tests/CMakeFiles/empty.dir/clean
+.PHONY : glfw/tests/CMakeFiles/empty.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/icon.dir
+# Target rules for target glfw/tests/CMakeFiles/icon.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/icon.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/icon.dir/build.make glfw-3.3.2/tests/CMakeFiles/icon.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/icon.dir/build.make glfw-3.3.2/tests/CMakeFiles/icon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=44,45 "Built target icon"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/icon.dir/all
+glfw/tests/CMakeFiles/icon.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/icon.dir/build.make glfw/tests/CMakeFiles/icon.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/icon.dir/build.make glfw/tests/CMakeFiles/icon.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=44,45,46 "Built target icon"
+.PHONY : glfw/tests/CMakeFiles/icon.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/icon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/icon.dir/all
+glfw/tests/CMakeFiles/icon.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/icon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/icon.dir/rule
+.PHONY : glfw/tests/CMakeFiles/icon.dir/rule
 
 # Convenience name for target.
-icon: glfw-3.3.2/tests/CMakeFiles/icon.dir/rule
+icon: glfw/tests/CMakeFiles/icon.dir/rule
 
 .PHONY : icon
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/icon.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/icon.dir/build.make glfw-3.3.2/tests/CMakeFiles/icon.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/icon.dir/clean
+glfw/tests/CMakeFiles/icon.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/icon.dir/build.make glfw/tests/CMakeFiles/icon.dir/clean
+.PHONY : glfw/tests/CMakeFiles/icon.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/events.dir
+# Target rules for target glfw/tests/CMakeFiles/events.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/events.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/events.dir/build.make glfw-3.3.2/tests/CMakeFiles/events.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/events.dir/build.make glfw-3.3.2/tests/CMakeFiles/events.dir/build
+glfw/tests/CMakeFiles/events.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/events.dir/build.make glfw/tests/CMakeFiles/events.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/events.dir/build.make glfw/tests/CMakeFiles/events.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=15,16,17 "Built target events"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/events.dir/all
+.PHONY : glfw/tests/CMakeFiles/events.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/events.dir/rule: cmake_check_build_system
+glfw/tests/CMakeFiles/events.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/events.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/events.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/events.dir/rule
+.PHONY : glfw/tests/CMakeFiles/events.dir/rule
 
 # Convenience name for target.
-events: glfw-3.3.2/tests/CMakeFiles/events.dir/rule
+events: glfw/tests/CMakeFiles/events.dir/rule
 
 .PHONY : events
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/events.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/events.dir/build.make glfw-3.3.2/tests/CMakeFiles/events.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/events.dir/clean
+glfw/tests/CMakeFiles/events.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/events.dir/build.make glfw/tests/CMakeFiles/events.dir/clean
+.PHONY : glfw/tests/CMakeFiles/events.dir/clean
 
 #=============================================================================
-# Target rules for target glfw-3.3.2/tests/CMakeFiles/joysticks.dir
+# Target rules for target glfw/tests/CMakeFiles/joysticks.dir
 
 # All Build rule for target.
-glfw-3.3.2/tests/CMakeFiles/joysticks.dir/all: glfw-3.3.2/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/joysticks.dir/build.make glfw-3.3.2/tests/CMakeFiles/joysticks.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/joysticks.dir/build.make glfw-3.3.2/tests/CMakeFiles/joysticks.dir/build
+glfw/tests/CMakeFiles/joysticks.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/joysticks.dir/build.make glfw/tests/CMakeFiles/joysticks.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/joysticks.dir/build.make glfw/tests/CMakeFiles/joysticks.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=53,54,55 "Built target joysticks"
-.PHONY : glfw-3.3.2/tests/CMakeFiles/joysticks.dir/all
+.PHONY : glfw/tests/CMakeFiles/joysticks.dir/all
 
 # Build rule for subdir invocation for target.
-glfw-3.3.2/tests/CMakeFiles/joysticks.dir/rule: cmake_check_build_system
+glfw/tests/CMakeFiles/joysticks.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw-3.3.2/tests/CMakeFiles/joysticks.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/tests/CMakeFiles/joysticks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles 0
-.PHONY : glfw-3.3.2/tests/CMakeFiles/joysticks.dir/rule
+.PHONY : glfw/tests/CMakeFiles/joysticks.dir/rule
 
 # Convenience name for target.
-joysticks: glfw-3.3.2/tests/CMakeFiles/joysticks.dir/rule
+joysticks: glfw/tests/CMakeFiles/joysticks.dir/rule
 
 .PHONY : joysticks
 
 # clean rule for target.
-glfw-3.3.2/tests/CMakeFiles/joysticks.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw-3.3.2/tests/CMakeFiles/joysticks.dir/build.make glfw-3.3.2/tests/CMakeFiles/joysticks.dir/clean
-.PHONY : glfw-3.3.2/tests/CMakeFiles/joysticks.dir/clean
+glfw/tests/CMakeFiles/joysticks.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw/tests/CMakeFiles/joysticks.dir/build.make glfw/tests/CMakeFiles/joysticks.dir/clean
+.PHONY : glfw/tests/CMakeFiles/joysticks.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

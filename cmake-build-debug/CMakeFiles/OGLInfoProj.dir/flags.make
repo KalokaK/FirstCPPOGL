@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/kaloka/CLionProjects/OGLInfoProj/include -I/home/kaloka/CLionProjects/OGLInfoProj/glfw-3.3.2/include
+C_INCLUDES = -I/home/kaloka/CLionProjects/OGLInfoProj/include -I/home/kaloka/CLionProjects/OGLInfoProj/glfw/include
 
 C_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kaloka/CLionProjects/OGLInfoProj/include -I/home/kaloka/CLionProjects/OGLInfoProj/glfw-3.3.2/include
+CXX_INCLUDES = -I/home/kaloka/CLionProjects/OGLInfoProj/include -I/home/kaloka/CLionProjects/OGLInfoProj/glfw/include
 
 CXX_FLAGS = -g -std=gnu++2a
 

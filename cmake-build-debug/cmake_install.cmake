@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/glfw-3.3.2/cmake_install.cmake")
+  include("/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/glfw/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

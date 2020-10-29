@@ -113,14 +113,13 @@ OGLInfoProj_EXTERNAL_OBJECTS =
 OGLInfoProj: CMakeFiles/OGLInfoProj.dir/main.cpp.o
 OGLInfoProj: CMakeFiles/OGLInfoProj.dir/src/glad.c.o
 OGLInfoProj: CMakeFiles/OGLInfoProj.dir/build.make
-OGLInfoProj: glfw-3.3.2/src/libglfw3.a
-OGLInfoProj: glfw-3.3.2/src/libglfw3.a
+OGLInfoProj: glfw/src/libglfw3.a
+OGLInfoProj: glfw/src/libglfw3.a
 OGLInfoProj: /usr/lib/libOpenGL.so
 OGLInfoProj: /usr/lib/libGLX.so
 OGLInfoProj: /usr/lib/libGLU.so
 OGLInfoProj: /usr/lib/librt.so
 OGLInfoProj: /usr/lib/libm.so
-OGLInfoProj: /usr/lib/libX11.so
 OGLInfoProj: CMakeFiles/OGLInfoProj.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kaloka/CLionProjects/OGLInfoProj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OGLInfoProj"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OGLInfoProj.dir/link.txt --verbose=$(VERBOSE)
