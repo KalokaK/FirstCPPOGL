@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#include "src/helpers/helpers.h"
+
 // https://github.com/Konf/LearnOpenGL-CLion/blob/master/main.cpp example main code from here..
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -27,8 +29,8 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
-    if (window == NULL)
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", nullptr, nullptr);
+    if (window == nullptr)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();

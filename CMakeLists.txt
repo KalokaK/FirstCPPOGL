@@ -9,8 +9,12 @@ set(CMAKE_CXX_STANDARD 20)
 add_subdirectory(glfw)
 include_directories(include)
 
-set(SOURCE_FILES main.cpp src/glad.c)
-
+set(
+        SOURCE_FILES main.cpp src/glad.c
+        src/tutorial/hello_triangle/hello_triangle.cpp
+        src/tutorial/hello_triangle/hello_triangle.h
+        src/helpers/helpers.cpp src/helpers/helpers.h
+        src/helpers/gl_helpers/gl_helpers.cpp src/helpers/gl_helpers/gl_helpers.h)
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 
 # Linking GLFW and OGL
