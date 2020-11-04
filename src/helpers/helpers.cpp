@@ -3,8 +3,8 @@
 //
 
 #include <fstream>
-#include <GLFW/glfw3.h>
 #include <glad/glad.h>
+#include <GLFW/glfw3.h>
 #include "helpers.h"
 
 char * helpers::get_ascii_file(const char *filename) {
