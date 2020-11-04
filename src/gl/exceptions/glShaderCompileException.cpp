@@ -4,6 +4,7 @@
 
 #include "glException.h"
 #include "algorithm"
+#include  "gte"
 
 gl_exceptions::glShaderCompileException::glShaderCompileException(const char *compile_info) {
     std::copy_n(compile_info, 512, gl_compile_info);
