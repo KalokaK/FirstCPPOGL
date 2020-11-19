@@ -30,6 +30,6 @@ file(COPY hangman DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 file(COPY hangman DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/Debug)
 
 # shaders 
-configure_file(src/vertshader.vert Debug/vertshader.vert COPYONLY)
-configure_file(src/fragshader.frag Debug/fragshader.frag COPYONLY)
-configure_file(nouns.txt Debug/nouns.txt COPYONLY)
+configure_file(src/vertshader.vert vertshader.vert COPYONLY)
+configure_file(src/fragshader.frag fragshader.frag COPYONLY)
+configure_file(nouns.txt nouns.txt COPYONLY)
