@@ -150,7 +150,6 @@ int main(int argc, char* argv[]) {
     unsigned int hangmanBuffer = textures::loadTextureToBuffer(std::string("hangman/0.png"), 0, 0);
     hangman hangman(hangmanBuffer, -.75, -.7, 1.4, 1.4);
     liveLost.add(&hangman::changeHangmanTexture, &hangman);
-
     glEnable(GL_BLEND);
     // main game loop //
     while(!glfwWindowShouldClose(window))

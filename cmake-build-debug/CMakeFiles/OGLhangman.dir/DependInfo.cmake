@@ -5,9 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/kaloka/CLionProjects/OGLhangman/src/glad.c" "/home/kaloka/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/src/glad.c.o"
+  "C:/Users/greut/CLionProjects/OGLhangman/src/glad.c" "C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/src/glad.c.obj"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
@@ -16,12 +16,12 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../lib/glfw/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kaloka/CLionProjects/OGLhangman/main.cpp" "/home/kaloka/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/main.cpp.o"
-  "/home/kaloka/CLionProjects/OGLhangman/src/glBoilerplateAndHelpers/sprite.cpp" "/home/kaloka/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/src/glBoilerplateAndHelpers/sprite.cpp.o"
-  "/home/kaloka/CLionProjects/OGLhangman/src/glBoilerplateAndHelpers/texture.cpp" "/home/kaloka/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/src/glBoilerplateAndHelpers/texture.cpp.o"
-  "/home/kaloka/CLionProjects/OGLhangman/src/helpers.cpp" "/home/kaloka/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/src/helpers.cpp.o"
+  "C:/Users/greut/CLionProjects/OGLhangman/main.cpp" "C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/main.cpp.obj"
+  "C:/Users/greut/CLionProjects/OGLhangman/src/glBoilerplateAndHelpers/sprite.cpp" "C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/src/glBoilerplateAndHelpers/sprite.cpp.obj"
+  "C:/Users/greut/CLionProjects/OGLhangman/src/glBoilerplateAndHelpers/texture.cpp" "C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/src/glBoilerplateAndHelpers/texture.cpp.obj"
+  "C:/Users/greut/CLionProjects/OGLhangman/src/helpers.cpp" "C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug/CMakeFiles/OGLhangman.dir/src/helpers.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -32,7 +32,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kaloka/CLionProjects/OGLhangman/cmake-build-debug/lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug/lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

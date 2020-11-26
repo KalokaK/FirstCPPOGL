@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/OGLhangman.dir/main.cpp.o"
-  "CMakeFiles/OGLhangman.dir/src/glBoilerplateAndHelpers/sprite.cpp.o"
-  "CMakeFiles/OGLhangman.dir/src/glBoilerplateAndHelpers/texture.cpp.o"
-  "CMakeFiles/OGLhangman.dir/src/glad.c.o"
-  "CMakeFiles/OGLhangman.dir/src/helpers.cpp.o"
-  "OGLhangman"
+  "CMakeFiles/OGLhangman.dir/main.cpp.obj"
+  "CMakeFiles/OGLhangman.dir/src/glBoilerplateAndHelpers/sprite.cpp.obj"
+  "CMakeFiles/OGLhangman.dir/src/glBoilerplateAndHelpers/texture.cpp.obj"
+  "CMakeFiles/OGLhangman.dir/src/glad.c.obj"
+  "CMakeFiles/OGLhangman.dir/src/helpers.cpp.obj"
+  "OGLhangman.exe"
+  "OGLhangman.exe.manifest"
+  "OGLhangman.lib"
   "OGLhangman.pdb"
 )
 

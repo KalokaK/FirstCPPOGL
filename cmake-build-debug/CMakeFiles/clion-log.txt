@@ -1,6 +1,6 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kaloka/CLionProjects/OGLhangman
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\greut\CLionProjects\OGLhangman
 -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
--- Using X11 for window creation
+-- Using Win32 for window creation
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/kaloka/CLionProjects/OGLhangman/cmake-build-debug
+-- Build files have been written to: C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug
