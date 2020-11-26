@@ -13,33 +13,8 @@ namespace helpers {
     void framebufferSizeCallback(GLFWwindow *glfwWindow, int width, int height) {
         glViewport(0, 0, width, height);
     }
-
-    void render() {
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-    }
-    
-    std::string get_word()
-    {
-        // reads a random word out of nouns.txt and returns it
-        std::ifstream nouns("nouns.txt");
-
-        std::string result;
-        int lim;
-
-        lim = rand() % 4554;
-
-        while (lim--> 0)
-        {
-                nouns >> result;
-        }
-
-        nouns.close();
-
-        return result;
-    }
 }
-
+/*
 namespace input {
     void setupGlfwInputCallbacks(GLFWwindow *window, inputHandler *handler) {
         if (!inputHandler::glfwBound) {
@@ -48,50 +23,11 @@ namespace input {
         }
     }
 
-    void inputHandler::keypressCallback(GLFWwindow *window, int key, int scancode, int action, int mods) {
-        switch (key) {
-            case GLFW_KEY_UP:
-                inputActionHolder.move4Axis(0., 1.);
-                break;
-            case GLFW_KEY_DOWN:
-                inputActionHolder.move4Axis(0., -1.);
-                break;
-            case GLFW_KEY_RIGHT:
-                inputActionHolder.move4Axis(1., 0.);
-                break;
-            case GLFW_KEY_LEFT:
-                inputActionHolder.move4Axis(-1., 0.);
-                break;
-            case GLFW_KEY_ENTER:
-                inputActionHolder.accept();
-                break;
-            case GLFW_KEY_HOME:
-                inputActionHolder.reload();
-            case GLFW_KEY_END:
-                inputActionHolder.close();
-                break;
-            case GLFW_KEY_BACKSPACE:
-            if (action == GLFW_RELEASE) inputActionHolder.back();
-                break;
-            default:
-                ;
-        }
-    }
-
-    void inputHandler::characterCallback(GLFWwindow *window, unsigned int codepoint) {
-        if (65 <= codepoint && codepoint <= 90) {
-            preprocessGenericCharacter(codepoint);
-        } else if (97 <= codepoint && codepoint <= 122) {
-            preprocessGenericCharacter(codepoint - 32);
-        } else if (codepoint == 32) {
-            preprocessGenericCharacter(32);
-        }
-    }
 
     inputHandler::inputHandler() :
     inputActionHolder() {
-        inputHandler::keypressEvent.add(&inputHandler::keypressCallback, this);
-        inputHandler::characterEvent.add(&inputHandler::characterCallback, this);
+        inputHandler::keypressEvent.add(&inputHandler::keypressEventCaller, this);
+        inputHandler::characterEvent.add(&inputHandler::characterEventCaller, this);
     };
     bool inputHandler::glfwBound = false;
     event<GLFWwindow *, int, int, int, int> inputHandler::keypressEvent =
@@ -104,18 +40,6 @@ namespace input {
         inputHandler::characterEvent.sub(&inputHandler::characterCallback, this);
     }
 
-    void inputHandler::preprocessGenericCharacter(unsigned int codepoint) {
-        char letter = 63; // char("?")
-        if (65 <= codepoint && codepoint <= 90) {
-            letter = (char)codepoint;
-        } else if (97 <= codepoint && codepoint <= 122) {
-            letter = (char)(codepoint - 32);
-        } else if (codepoint == 32) {
-            letter = (char)32;
-        }
-        inputActionHolder.genericCharacterEvent(letter);
-    }
-
     void inputHandler::keypressEventCaller(GLFWwindow *window, int key, int scancode, int action, int mods) {
         keypressEvent(window, key, scancode, action, mods);
     }
@@ -124,15 +48,53 @@ namespace input {
         characterEvent(window, codepoint);
     }
 
-    inputActionEventsHolder::inputActionEventsHolder() :
-    move4Axis(),
-    accept(),
-    reload(),
-    genericCharacterEvent(),
-    close()
-    {}
-}
+    void inputHandler::mouseButtonEventCaller(GLFWwindow *window, int key, int action, int mods) {
+        mouseButtonEvent(window, key, action, mods);
+    }
 
+    void inputHandler::mouseMoveEventCaller(GLFWwindow *window, double posX, double posY) {
+        mouseMovementEvent(window, posX, posY);
+    }
+
+    PerformableInputActionsBase *inputHandler::getInputActionHolder() const {
+        return inputActionHolder;
+    }
+
+    void inputHandler::setInputActionHolder(PerformableInputActionsBase *inputActionHolder) {
+        inputHandler::inputActionHolder->unbind();
+        inputHandler::inputActionHolder = inputActionHolder;
+        inputHandler::inputActionHolder->bind();
+    }
+
+    PerformableInputActionsBase::PerformableInputActionsBase()
+    {}
+
+    void
+    PerformableInputActionsBase::keypressCallback(GLFWwindow *window, int key, int scancode, int action, int mods) {
+
+    }
+
+    void PerformableInputActionsBase::characterCallback(GLFWwindow *window, unsigned int codepoint) {
+
+    }
+
+    void PerformableInputActionsBase::mouseButtonCallback(GLFWwindow *window, int key, int action, int mods) {
+
+    }
+
+    void PerformableInputActionsBase::mouseMoveCallback(GLFWwindow *window, double posX, double posY) {
+
+    }
+
+    void PerformableInputActionsBase::bind() {
+
+    }
+
+    void PerformableInputActionsBase::unbind() {
+
+    }
+}
+*/
 namespace shaders
 {
     unsigned int load_shader(const char* filename, int shadertype)
@@ -180,14 +142,14 @@ namespace shaders
     }
 
 
-    unsigned int shader_program()
+    unsigned int shader_program(const char *vertShaderLoc, const char *fragShaderLoc)
     {
         unsigned int shader[2];
 
         unsigned int out = glCreateProgram();
-        shader[0] = load_shader(vertshader_loc, GL_VERTEX_SHADER);
+        shader[0] = load_shader(vertShaderLoc, GL_VERTEX_SHADER);
         glAttachShader(out, shader[0]);
-        shader[1] = load_shader(fragshader_loc, GL_FRAGMENT_SHADER);
+        shader[1] = load_shader(fragShaderLoc, GL_FRAGMENT_SHADER);
         glAttachShader(out, shader[1]);
         glLinkProgram(out);
 
@@ -199,7 +161,7 @@ namespace shaders
 
         if(!success) {
             char infoLog[512];
-            glGetProgramInfoLog(out, 512, NULL, infoLog);
+            glGetProgramInfoLog(out, 512, nullptr, infoLog);
             printf("shaderporgramm linking didn't work: %s\n", infoLog);
             throw "ShaderPorgram didn't work";
         }

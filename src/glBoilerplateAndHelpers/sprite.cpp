@@ -16,7 +16,12 @@ void sprite::draw(unsigned int shaderProgram) {
     }
 }
 
-sprite::sprite(GLuint glTexture, float xPos, float yPos, float hVal, float wVal) : enabled(true), scale(1.0f), texture(), vao(), ebo() {
+sprite::sprite(GLuint glTexture, float xPos, float yPos, float hVal, float wVal) :
+enabled(true),
+scale(1.0f),
+texture(),
+vao(),
+ebo() {
     x = xPos;
     y = yPos;
     w = wVal;
