@@ -10,8 +10,9 @@
 
 using events::event;
 namespace input {
-    auto keyboardInputEvent = event<GLFWwindow *, int, int, int, int>();
-    auto characterInputEvent = event<GLFWwindow *, unsigned int>();
-    void keyboardEventCaller();
+    double mouseX, mouseY;
+    void mousePositionUpdateCallback(GLFWwindow* window, double x, double y);
+    void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods);
+    auto mouseClickEvent = event<GLFWwindow* , double, double, int, int, int>();
 }
 #endif //OGLHANGMAN_INPUT_H

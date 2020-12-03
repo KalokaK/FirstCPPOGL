@@ -91,7 +91,7 @@ namespace sprites
         void setText(std::string newtext);
         std::string getText();
 
-        void draw(unsigned int shader);
+        void draw(unsigned int shader) override;
 
     private:
         std::string text = "";
@@ -99,6 +99,4 @@ namespace sprites
     };
 
 };
-
-
 #endif //OGLHANGMAN_HELPERS_H

@@ -1,0 +1,8 @@
+//
+// Created by kaloka on 02/12/2020.
+//
+
+#ifndef OGLHANGMAN_UIELEMENTS_H
+#define OGLHANGMAN_UIELEMENTS_H
+
+#endif //OGLHANGMAN_UIELEMENTS_H

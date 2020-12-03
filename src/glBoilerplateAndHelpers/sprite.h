@@ -9,13 +9,24 @@
 #include <stb/stb_image.h>
 #include <filesystem>
 
+enum Sprite_Attributes {
+    X,
+    Y,
+    SCALE,
+    COLOR
+};
+
 using std::string;
 class sprite : public sprites::Sprite {
+    unsigned int vbo;
     unsigned int vao;
     unsigned int texture;
+    int texX, texY;
     bool enabled;
     unsigned int ebo;
+    uint8_t r, g, b;
 public:
+    void setSpriteAttrib(Sprite_Attributes attrib, float val);
     void setTexture(unsigned int i);
     void setEnabled(bool val);
     [[nodiscard]] unsigned int getTexture() const;
@@ -25,11 +36,12 @@ private:
     void onDisable();
     void generateVertexBuffer();
 public:
-    float scale;
-    explicit sprite(GLuint glTexture, float xPos, float yPos, float hVal, float wVal);
+    explicit sprite(GLuint glTexture, float xPos, float yPos);
 
     void draw(unsigned int shaderProgram) override;
 };
 
+float encodeRGBAAsFloat(uint8_t r, uint8_t g, uint8_t b, uint8_t a);
+void decodeRGBAFromFloat(uint8_t *r, uint8_t *g, uint8_t *b, uint8_t *a, float sadFloat);
 
 #endif //OGLHANGMAN_SPRITE_H

@@ -13,5 +13,23 @@
 
 namespace chessSprites{
     std::map<std::string, unsigned int> * GetChessTextures();
+    struct SpriteBoard {
+        sprite * boardSprite;
+        float boardScale, boardX, boardY;
+        sprite * board[8][8];
+        explicit SpriteBoard(sprite *boardSprite);
+        void updateSpriteData();
+        void draw(unsigned int shader);
+        void lerpPiece(int fromX, int fromY, int toX, int toY);
+
+        static void setupBoard(chessSprites::SpriteBoard *board, std::map<std::string, unsigned int> *pieceTextureLookup);
+
+    private:
+        bool turn;
+    public:
+        bool isTurn() const;
+
+        void setTurn(bool turn);
+    };
 }
 #endif //OGLHANGMAN_CHESSSPRITEHANDLER_H

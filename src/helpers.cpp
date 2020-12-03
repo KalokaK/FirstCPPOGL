@@ -270,6 +270,7 @@ namespace sprites
 
     void Text::draw(unsigned int shader)
     {
+        glUseProgram(shader);
         float vertices[] = {
         // positions          // colors           // texture coords
         x + h,  y + h, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 0.0f, // top right

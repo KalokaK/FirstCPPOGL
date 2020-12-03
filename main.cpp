@@ -16,6 +16,15 @@ bool win = false;
 
 int main(int argc, char* argv[]) {
 
+    uint8_t r = 123;
+    uint8_t g = 100;
+    uint8_t b = 69;
+    uint8_t a = 128;
+
+    float f = encodeRGBAAsFloat(r, g, b, a);
+    decodeRGBAFromFloat(&r, &g, &b, &a, f);
+    printf("r: %d, g: %d, b: %d, a: %d \n", r, g, b, a);
+
     srand(time(0));
     // create open gl context //
     glfwInit();
@@ -25,14 +34,14 @@ int main(int argc, char* argv[]) {
     // //
 
     // make glfw window //
-    GLFWwindow * window = glfwCreateWindow(800, 600, "hangman", nullptr, nullptr);
+    GLFWwindow * window = glfwCreateWindow(800, 800, "hangman", nullptr, nullptr);
     if (window == nullptr) {
         glfwTerminate();
         throw "no glfw window created this is bad, check dependencies";
     }
     glfwMakeContextCurrent(window);
     // //
-
+    glfwSetFramebufferSizeCallback(window, helpers::framebufferSizeCallback);
     // set up glad //
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         throw "glad died something has gone wrong check dependencies";
@@ -40,10 +49,17 @@ int main(int argc, char* argv[]) {
     // //
 
     // shaders //
-    char vertFile[] = {"shaders/vertshader.vert"};
-    char fragFile[] = {"shaders/fragshader.frag"};
-    unsigned int shaderprog = shaders::shader_program(vertFile, fragFile);
-    glUseProgram(shaderprog);
+    char spriteVertFile[] = {"shaders/sprite.vert"};
+    char spriteFragFile[] = {"shaders/sprite.frag"};
+    unsigned int spriteProg = shaders::shader_program(spriteVertFile, spriteFragFile);
+    char textVertFile[] = {"shaders/text.vert"};
+    char textFragFile[] = {"shaders/text.frag"};
+    unsigned int textProg = shaders::shader_program(textVertFile, textFragFile);
+    char uiVertFile[] = {"shaders/ui.vert"};
+    char uiFragFile[] = {"shaders/ui.frag"};
+    unsigned int uiProg = shaders::shader_program(uiVertFile, uiFragFile);
+
+    glUseProgram(spriteProg);
     // //
 
     glEnable(GL_BLEND);
@@ -51,18 +67,36 @@ int main(int argc, char* argv[]) {
 
     printf("\nshader success!\n");
     auto chessTextureMapping = chessSprites::GetChessTextures();
-    auto update = event<unsigned int>();
-    auto whiteKingSprite = sprite((*chessTextureMapping)["w_king_png_1024px.png"], 0, 0, 1, 1);
-    update.add(&sprite::draw, &whiteKingSprite);
+    auto spriteUpdate = event<unsigned int>();
+    auto textUpdate = event<unsigned int>();
+    auto uiUpdate = event<unsigned int>();
+
+    sprites::Text::TextInit();
+    auto myTestText = sprites::Text("Hello Chess");
+    myTestText.x = -0.5f;
+    myTestText.y = -0.6f;
+    textUpdate.add(&sprites::Text::draw, &myTestText);
+
+    auto boardSprite = sprite((*chessTextureMapping)["chess.png"], 0, 0);
+    auto myTestBoard = chessSprites::SpriteBoard(&boardSprite);
+    chessSprites::SpriteBoard::setupBoard(&myTestBoard, chessTextureMapping);
+    myTestBoard.boardScale = 1.f;
+    myTestBoard.boardY = 0.2;
+    myTestBoard.setTurn(true);
+    myTestBoard.boardSprite->setSpriteAttrib(COLOR, f);
+    myTestBoard.updateSpriteData();
+    spriteUpdate.add(&chessSprites::SpriteBoard::draw, &myTestBoard);
     // setup input //
     // //
     // set viewport rect //
-    glViewport(0, 0, 800, 600);
+    glViewport(0, 0, 800, 800);
 
     // main game loop //
-    while(!glfwWindowShouldClose(window))
-    {
-        update(shaderprog);
+    while(!glfwWindowShouldClose(window)) {
+        glClearColor(0.1f, 0.2f, 0.2f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+        spriteUpdate(spriteProg);
+        textUpdate(textProg);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
