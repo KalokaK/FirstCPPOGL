@@ -14,6 +14,7 @@
 namespace chessSprites{
     std::map<std::string, unsigned int> * GetChessTextures();
     struct SpriteBoard {
+        std::vector<int> highlight;
         sprite * boardSprite;
         float boardScale, boardX, boardY;
         sprite * board[8][8];
@@ -23,8 +24,10 @@ namespace chessSprites{
         void lerpPiece(int fromX, int fromY, int toX, int toY);
 
         static void setupBoard(chessSprites::SpriteBoard *board, std::map<std::string, unsigned int> *pieceTextureLookup);
-
+        void pushHighlight(int x, int y);
     private:
+        unsigned int glowTex;
+        unsigned int glowShader;
         bool turn;
     public:
         bool isTurn() const;

@@ -19,13 +19,13 @@ enum Sprite_Attributes {
 using std::string;
 class sprite : public sprites::Sprite {
     unsigned int vbo;
-    unsigned int vao;
     unsigned int texture;
     int texX, texY;
     bool enabled;
     unsigned int ebo;
     uint8_t r, g, b;
 public:
+    unsigned int vao;
     void setSpriteAttrib(Sprite_Attributes attrib, float val);
     void setTexture(unsigned int i);
     void setEnabled(bool val);

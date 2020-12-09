@@ -10,9 +10,8 @@
 
 using events::event;
 namespace input {
-    double mouseX, mouseY;
     void mousePositionUpdateCallback(GLFWwindow* window, double x, double y);
     void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods);
-    auto mouseClickEvent = event<GLFWwindow* , double, double, int, int, int>();
+    event<GLFWwindow* , double, double, int, int, int> * getMouseEvent();
 }
 #endif //OGLHANGMAN_INPUT_H

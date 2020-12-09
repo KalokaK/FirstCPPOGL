@@ -17,7 +17,10 @@ std::map<std::string, unsigned int> *chessSprites::GetChessTextures() {
 }
 
 chessSprites::SpriteBoard::SpriteBoard(sprite *boardSprite) :
-board(), boardScale(1), boardX(0), boardY(0), boardSprite(boardSprite), turn() {}
+board(), boardScale(1), boardX(0), boardY(0), boardSprite(boardSprite), turn(), highlight(), glowTex(), glowShader() {
+    glowTex = textures::loadTextureToBuffer(std::string("glow.png"), 0, 0);
+    glowShader = shaders::shader_program("shaders/highlight.vert", "shaders/highlight.frag");
+}
 
 void chessSprites::SpriteBoard::updateSpriteData() {
     boardSprite->setSpriteAttrib(SCALE, boardScale);
@@ -37,6 +40,19 @@ void chessSprites::SpriteBoard::updateSpriteData() {
 
 void chessSprites::SpriteBoard::draw(unsigned int shader) {
     boardSprite->draw(shader);
+    for (auto loc : highlight) {
+        glUseProgram(glowShader);
+        glUniform1i(glGetUniformLocation(glowShader, "field"), loc);
+        glUniform1i(glGetUniformLocation(glowShader, "text"), 0);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, glowTex);
+
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+
+        glBindVertexArray(boardSprite->vao);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    }
     for (int idx = 0; idx <= 7; idx++) {
         for (int jdx = 0; jdx <= 7; jdx++) {
             if (board[idx][jdx] == nullptr) continue;
@@ -75,5 +91,9 @@ bool chessSprites::SpriteBoard::isTurn() const {
 void chessSprites::SpriteBoard::setTurn(bool turn) {
     SpriteBoard::turn = turn;
     updateSpriteData();
+}
+
+void chessSprites::SpriteBoard::pushHighlight(int x, int y) {
+    highlight.push_back((y - 1) * 8 + x - 1);
 }
 

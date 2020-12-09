@@ -6,6 +6,26 @@
 #include <glBoilerplateAndHelpers/sprite.h>
 #include "glBoilerplateAndHelpers/texture.h"
 #include <chessSpriteHandler.h>
+#include <input.h>
+int XRES = 800;
+int YRES = 800;
+void mouseListener (GLFWwindow *window,double x, double y, int button, int action, int mods) {
+    x /= (float)XRES;
+    x -= 0.5;
+    x*=2;
+    y /= (float)YRES;
+    y-=0.5;
+    y*=-2;
+    x -= 0 - 0.5 * 1; // unhard
+    y -= 0.2 - 0.5 * 1;
+    x *= 8 / 1;
+    y *= 8 / 1;
+    x = (int)x;
+    y = (int)y;
+    x = (0 <= x && x <= 7) && (0 <= y && y <= 7) ? x : -1;
+    y = (0 <= y && y <= 7) && (0 <= x && x <= 7) ? y : -1;
+    std::cout << "x: " << x  << "y: " << y  << std::endl;
+}
 
 std::string guess;
 std::string word;
@@ -64,6 +84,10 @@ int main(int argc, char* argv[]) {
 
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+    float borderColor[] = { 0.0f, 0.0f, 0.0f, 0.0f };
+    glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
 
     printf("\nshader success!\n");
     auto chessTextureMapping = chessSprites::GetChessTextures();
@@ -90,7 +114,17 @@ int main(int argc, char* argv[]) {
     // //
     // set viewport rect //
     glViewport(0, 0, 800, 800);
-
+    int glowX = 3;
+    int glowY = 5;
+    myTestBoard.pushHighlight(3,5);
+    myTestBoard.pushHighlight(7,8);
+    myTestBoard.pushHighlight(1,2);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+    glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
+    glfwSetCursorPosCallback(window, input::mousePositionUpdateCallback);
+    glfwSetMouseButtonCallback(window, input::mouseButtonCallback);
+    *input::getMouseEvent() += mouseListener;
     // main game loop //
     while(!glfwWindowShouldClose(window)) {
         glClearColor(0.1f, 0.2f, 0.2f, 1.0f);
