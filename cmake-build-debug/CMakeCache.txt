@@ -182,7 +182,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=OGLhangman
+CMAKE_PROJECT_NAME:STATIC=chess
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.4.0
@@ -324,6 +324,12 @@ PYTHON_EXECUTABLE:FILEPATH=C:/Users/greut/Anaconda3_2020_07/python.exe
 
 //Use MSVC runtime library DLL
 USE_MSVC_RUNTIME_LIBRARY_DLL:BOOL=ON
+
+//Value Computed by CMake
+chess_BINARY_DIR:STATIC=C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug
+
+//Value Computed by CMake
+chess_SOURCE_DIR:STATIC=C:/Users/greut/CLionProjects/OGLhangman
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=C:/Users/greut/CLionProjects/OGLhangman/cmake-build-debug/test/Google_tests/lib/googlemock

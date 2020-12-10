@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(OGLhangman)
+project(chess)
 
 find_package(OpenGL REQUIRED)
 
@@ -11,11 +11,16 @@ add_subdirectory(test/Google_tests)
 include_directories(src)
 
 set(SOURCE_FILES
-        main.cpp
+        #main.cpp
+        chess/chess_figures.cpp
         src/glad.c
         src/helpers.cpp
         src/glBoilerplateAndHelpers/sprite.cpp
-        src/glBoilerplateAndHelpers/sprite.h src/glBoilerplateAndHelpers/texture.cpp src/glBoilerplateAndHelpers/texture.h)
+        src/glBoilerplateAndHelpers/sprite.h
+        src/glBoilerplateAndHelpers/texture.cpp
+        src/glBoilerplateAndHelpers/texture.h
+        #chess/chess_figures.h
+        )
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 
 target_include_directories(Google_Tests_run PRIVATE src)

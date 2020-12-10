@@ -93,7 +93,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/OGLhangman.dir/DependInfo.cmake"
+  "CMakeFiles/chess.dir/DependInfo.cmake"
   "lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "test/Google_tests/CMakeFiles/Google_Tests_run.dir/DependInfo.cmake"

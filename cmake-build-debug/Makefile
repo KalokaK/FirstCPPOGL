@@ -149,17 +149,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named OGLhangman
+# Target rules for targets named chess
 
 # Build rule for target.
-OGLhangman: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) OGLhangman
-.PHONY : OGLhangman
+chess: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) chess
+.PHONY : chess
 
 # fast build rule for target.
-OGLhangman\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\build
-.PHONY : OGLhangman\fast
+chess\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\build
+.PHONY : chess\fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -252,32 +252,32 @@ gtest_main\fast:
 	$(MAKE) $(MAKESILENT) -f test\Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) test\Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build
 .PHONY : gtest_main\fast
 
-main.obj: main.cpp.obj
+chess\chess_figures.obj: chess\chess_figures.cpp.obj
 
-.PHONY : main.obj
+.PHONY : chess\chess_figures.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+chess\chess_figures.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\chess\chess_figures.cpp.obj
+.PHONY : chess\chess_figures.cpp.obj
 
-main.i: main.cpp.i
+chess\chess_figures.i: chess\chess_figures.cpp.i
 
-.PHONY : main.i
+.PHONY : chess\chess_figures.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\main.cpp.i
-.PHONY : main.cpp.i
+chess\chess_figures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\chess\chess_figures.cpp.i
+.PHONY : chess\chess_figures.cpp.i
 
-main.s: main.cpp.s
+chess\chess_figures.s: chess\chess_figures.cpp.s
 
-.PHONY : main.s
+.PHONY : chess\chess_figures.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\main.cpp.s
-.PHONY : main.cpp.s
+chess\chess_figures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\chess\chess_figures.cpp.s
+.PHONY : chess\chess_figures.cpp.s
 
 src\glBoilerplateAndHelpers\sprite.obj: src\glBoilerplateAndHelpers\sprite.cpp.obj
 
@@ -285,7 +285,7 @@ src\glBoilerplateAndHelpers\sprite.obj: src\glBoilerplateAndHelpers\sprite.cpp.o
 
 # target to build an object file
 src\glBoilerplateAndHelpers\sprite.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glBoilerplateAndHelpers\sprite.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glBoilerplateAndHelpers\sprite.cpp.obj
 .PHONY : src\glBoilerplateAndHelpers\sprite.cpp.obj
 
 src\glBoilerplateAndHelpers\sprite.i: src\glBoilerplateAndHelpers\sprite.cpp.i
@@ -294,7 +294,7 @@ src\glBoilerplateAndHelpers\sprite.i: src\glBoilerplateAndHelpers\sprite.cpp.i
 
 # target to preprocess a source file
 src\glBoilerplateAndHelpers\sprite.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glBoilerplateAndHelpers\sprite.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glBoilerplateAndHelpers\sprite.cpp.i
 .PHONY : src\glBoilerplateAndHelpers\sprite.cpp.i
 
 src\glBoilerplateAndHelpers\sprite.s: src\glBoilerplateAndHelpers\sprite.cpp.s
@@ -303,7 +303,7 @@ src\glBoilerplateAndHelpers\sprite.s: src\glBoilerplateAndHelpers\sprite.cpp.s
 
 # target to generate assembly for a file
 src\glBoilerplateAndHelpers\sprite.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glBoilerplateAndHelpers\sprite.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glBoilerplateAndHelpers\sprite.cpp.s
 .PHONY : src\glBoilerplateAndHelpers\sprite.cpp.s
 
 src\glBoilerplateAndHelpers\texture.obj: src\glBoilerplateAndHelpers\texture.cpp.obj
@@ -312,7 +312,7 @@ src\glBoilerplateAndHelpers\texture.obj: src\glBoilerplateAndHelpers\texture.cpp
 
 # target to build an object file
 src\glBoilerplateAndHelpers\texture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glBoilerplateAndHelpers\texture.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glBoilerplateAndHelpers\texture.cpp.obj
 .PHONY : src\glBoilerplateAndHelpers\texture.cpp.obj
 
 src\glBoilerplateAndHelpers\texture.i: src\glBoilerplateAndHelpers\texture.cpp.i
@@ -321,7 +321,7 @@ src\glBoilerplateAndHelpers\texture.i: src\glBoilerplateAndHelpers\texture.cpp.i
 
 # target to preprocess a source file
 src\glBoilerplateAndHelpers\texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glBoilerplateAndHelpers\texture.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glBoilerplateAndHelpers\texture.cpp.i
 .PHONY : src\glBoilerplateAndHelpers\texture.cpp.i
 
 src\glBoilerplateAndHelpers\texture.s: src\glBoilerplateAndHelpers\texture.cpp.s
@@ -330,7 +330,7 @@ src\glBoilerplateAndHelpers\texture.s: src\glBoilerplateAndHelpers\texture.cpp.s
 
 # target to generate assembly for a file
 src\glBoilerplateAndHelpers\texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glBoilerplateAndHelpers\texture.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glBoilerplateAndHelpers\texture.cpp.s
 .PHONY : src\glBoilerplateAndHelpers\texture.cpp.s
 
 src\glad.obj: src\glad.c.obj
@@ -339,7 +339,7 @@ src\glad.obj: src\glad.c.obj
 
 # target to build an object file
 src\glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glad.c.obj
 .PHONY : src\glad.c.obj
 
 src\glad.i: src\glad.c.i
@@ -348,7 +348,7 @@ src\glad.i: src\glad.c.i
 
 # target to preprocess a source file
 src\glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glad.c.i
 .PHONY : src\glad.c.i
 
 src\glad.s: src\glad.c.s
@@ -357,7 +357,7 @@ src\glad.s: src\glad.c.s
 
 # target to generate assembly for a file
 src\glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\glad.c.s
 .PHONY : src\glad.c.s
 
 src\helpers.obj: src\helpers.cpp.obj
@@ -366,7 +366,7 @@ src\helpers.obj: src\helpers.cpp.obj
 
 # target to build an object file
 src\helpers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\helpers.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\helpers.cpp.obj
 .PHONY : src\helpers.cpp.obj
 
 src\helpers.i: src\helpers.cpp.i
@@ -375,7 +375,7 @@ src\helpers.i: src\helpers.cpp.i
 
 # target to preprocess a source file
 src\helpers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\helpers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\helpers.cpp.i
 .PHONY : src\helpers.cpp.i
 
 src\helpers.s: src\helpers.cpp.s
@@ -384,7 +384,7 @@ src\helpers.s: src\helpers.cpp.s
 
 # target to generate assembly for a file
 src\helpers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\src\helpers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\src\helpers.cpp.s
 .PHONY : src\helpers.cpp.s
 
 # Help Target
@@ -400,15 +400,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... uninstall
 	@echo ... Google_Tests_run
-	@echo ... OGLhangman
+	@echo ... chess
 	@echo ... glfw
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... chess/chess_figures.obj
+	@echo ... chess/chess_figures.i
+	@echo ... chess/chess_figures.s
 	@echo ... src/glBoilerplateAndHelpers/sprite.obj
 	@echo ... src/glBoilerplateAndHelpers/sprite.i
 	@echo ... src/glBoilerplateAndHelpers/sprite.s

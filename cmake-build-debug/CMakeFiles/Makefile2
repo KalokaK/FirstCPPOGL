@@ -57,7 +57,7 @@ CMAKE_BINARY_DIR = C:\Users\greut\CLionProjects\OGLhangman\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles\OGLhangman.dir\all
+all: CMakeFiles\chess.dir\all
 all: lib\glfw\all
 all: test\Google_tests\all
 
@@ -70,7 +70,7 @@ preinstall: test\Google_tests\preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles\OGLhangman.dir\clean
+clean: CMakeFiles\chess.dir\clean
 clean: lib\glfw\clean
 clean: test\Google_tests\clean
 
@@ -194,31 +194,31 @@ test\Google_tests\lib\googletest\clean: test\Google_tests\lib\googletest\CMakeFi
 .PHONY : test\Google_tests\lib\googletest\clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/OGLhangman.dir
+# Target rules for target CMakeFiles/chess.dir
 
 # All Build rule for target.
-CMakeFiles\OGLhangman.dir\all: lib\glfw\src\CMakeFiles\glfw.dir\all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\greut\CLionProjects\OGLhangman\cmake-build-debug\CMakeFiles --progress-num=3,4,5,6,7,8 "Built target OGLhangman"
-.PHONY : CMakeFiles\OGLhangman.dir\all
+CMakeFiles\chess.dir\all: lib\glfw\src\CMakeFiles\glfw.dir\all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\greut\CLionProjects\OGLhangman\cmake-build-debug\CMakeFiles --progress-num=3,4,5,6,7,8 "Built target chess"
+.PHONY : CMakeFiles\chess.dir\all
 
 # Build rule for subdir invocation for target.
-CMakeFiles\OGLhangman.dir\rule: cmake_check_build_system
+CMakeFiles\chess.dir\rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\greut\CLionProjects\OGLhangman\cmake-build-debug\CMakeFiles 22
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\greut\CLionProjects\OGLhangman\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles\OGLhangman.dir\rule
+.PHONY : CMakeFiles\chess.dir\rule
 
 # Convenience name for target.
-OGLhangman: CMakeFiles\OGLhangman.dir\rule
+chess: CMakeFiles\chess.dir\rule
 
-.PHONY : OGLhangman
+.PHONY : chess
 
 # clean rule for target.
-CMakeFiles\OGLhangman.dir\clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OGLhangman.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OGLhangman.dir\clean
-.PHONY : CMakeFiles\OGLhangman.dir\clean
+CMakeFiles\chess.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chess.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\chess.dir\clean
+.PHONY : CMakeFiles\chess.dir\clean
 
 #=============================================================================
 # Target rules for target lib/glfw/CMakeFiles/uninstall.dir
@@ -278,8 +278,8 @@ lib\glfw\src\CMakeFiles\glfw.dir\clean:
 # Target rules for target test/Google_tests/CMakeFiles/Google_Tests_run.dir
 
 # All Build rule for target.
-test\Google_tests\CMakeFiles\Google_Tests_run.dir\all: test\Google_tests\lib\googletest\CMakeFiles\gtest.dir\all
 test\Google_tests\CMakeFiles\Google_Tests_run.dir\all: test\Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\all
+test\Google_tests\CMakeFiles\Google_Tests_run.dir\all: test\Google_tests\lib\googletest\CMakeFiles\gtest.dir\all
 	$(MAKE) $(MAKESILENT) -f test\Google_tests\CMakeFiles\Google_Tests_run.dir\build.make /nologo -$(MAKEFLAGS) test\Google_tests\CMakeFiles\Google_Tests_run.dir\depend
 	$(MAKE) $(MAKESILENT) -f test\Google_tests\CMakeFiles\Google_Tests_run.dir\build.make /nologo -$(MAKEFLAGS) test\Google_tests\CMakeFiles\Google_Tests_run.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\greut\CLionProjects\OGLhangman\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Google_Tests_run"
