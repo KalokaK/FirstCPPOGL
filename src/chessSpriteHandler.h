@@ -18,13 +18,12 @@ namespace chessSprites{
         sprite * boardSprite;
         float boardScale, boardX, boardY;
         sprite * board[8][8];
+        void move(int player, int from, int to);
         explicit SpriteBoard(sprite *boardSprite);
         void updateSpriteData();
         void draw(unsigned int shader);
-        void lerpPiece(int fromX, int fromY, int toX, int toY);
 
         static void setupBoard(chessSprites::SpriteBoard *board, std::map<std::string, unsigned int> *pieceTextureLookup);
-        void pushHighlight(int x, int y);
     private:
         unsigned int glowTex;
         unsigned int glowShader;

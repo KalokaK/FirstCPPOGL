@@ -39,11 +39,11 @@ ebo() {
 }
 
 void sprite::onEnable() {
-
+    // uh... either register a lambda for sprites or subclass... this is useless.
 }
 
 void sprite::onDisable() {
-
+    // same as "onEnable"
 }
 
 unsigned int sprite::getTexture() const {
@@ -116,7 +116,7 @@ void sprite::setSpriteAttrib(Sprite_Attributes attrib, float val) {
             h = val * (float)texY / max;
             break;
         case COLOR:
-            decodeRGBAFromFloat(&r, &g, &b, &a, val);
+            decodeRGBAFromFloat(&r, &g, &b, &a, val); // uh... yes...
             printf("%f, %f, %f \n", (float)r/256, (float)g/256, (float)b/256);
             break;
     }

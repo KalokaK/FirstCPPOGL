@@ -8,6 +8,11 @@
 #include <string>
 #include <stb/stb_image.h>
 #include <filesystem>
+#include <endian.h>
+
+#if __BYTE_ORDER__ != __ORDER_LITTLE_ENDIAN__ // yes cuz of the hacky shit in sprite....
+#error The author was too lazy to encode floats properly
+#endif
 
 enum Sprite_Attributes {
     X,

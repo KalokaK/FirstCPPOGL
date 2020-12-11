@@ -7,6 +7,7 @@
 #include "glBoilerplateAndHelpers/texture.h"
 #include <chessSpriteHandler.h>
 #include <input.h>
+#include <move.h>
 int XRES = 800;
 int YRES = 800;
 void mouseListener (GLFWwindow *window,double x, double y, int button, int action, int mods) {
@@ -41,7 +42,7 @@ int main(int argc, char* argv[]) {
     uint8_t b = 69;
     uint8_t a = 128;
 
-    float f = encodeRGBAAsFloat(r, g, b, a);
+    float f = encodeRGBAAsFloat(r, g, b, a); // well... it was fun to write. really dumb tho
     decodeRGBAFromFloat(&r, &g, &b, &a, f);
     printf("r: %d, g: %d, b: %d, a: %d \n", r, g, b, a);
 
@@ -88,43 +89,50 @@ int main(int argc, char* argv[]) {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
     float borderColor[] = { 0.0f, 0.0f, 0.0f, 0.0f };
     glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
-
+    // draw events. can register callbacks. event system from other project of mine.
+    // only thing here that is remotely decent. not parallel though. maybe imp later -> boost?
     printf("\nshader success!\n");
     auto chessTextureMapping = chessSprites::GetChessTextures();
     auto spriteUpdate = event<unsigned int>();
     auto textUpdate = event<unsigned int>();
     auto uiUpdate = event<unsigned int>();
-
+    //
+    // the god-awful text system. I guess it works.
+    // should really be done with a shader -> see "shaders/highlight.*" something like those
     sprites::Text::TextInit();
     auto myTestText = sprites::Text("Hello Chess");
     myTestText.x = -0.5f;
     myTestText.y = -0.6f;
     textUpdate.add(&sprites::Text::draw, &myTestText);
-
+    //
+    // create the sprite board... this should really be in game manager
     auto boardSprite = sprite((*chessTextureMapping)["chess.png"], 0, 0);
     auto myTestBoard = chessSprites::SpriteBoard(&boardSprite);
     chessSprites::SpriteBoard::setupBoard(&myTestBoard, chessTextureMapping);
     myTestBoard.boardScale = 1.f;
     myTestBoard.boardY = 0.2;
-    myTestBoard.setTurn(true);
     myTestBoard.boardSprite->setSpriteAttrib(COLOR, f);
     myTestBoard.updateSpriteData();
+    //
+    // setup code... nothing here follows SRP. maybe "chess" does
+    auto myGameManager = move::GameHandler(&myTestBoard, &myTestText);
+    input::init(window, &myTestBoard.boardScale, &myTestBoard.boardX, &myTestBoard.boardY, new input::EventActionsHolderClass(), &myGameManager);
+    chess::init();
+    //
+    // originally there were supposed to be more listeners
+    move::moveEvent()->add([](int player, int from, int to){chess::move(player, from, to);});
+    move::moveEvent()->add(&chessSprites::SpriteBoard::move, &myTestBoard);
+    //
     spriteUpdate.add(&chessSprites::SpriteBoard::draw, &myTestBoard);
     // setup input //
     // //
     // set viewport rect //
     glViewport(0, 0, 800, 800);
-    int glowX = 3;
-    int glowY = 5;
-    myTestBoard.pushHighlight(3,5);
-    myTestBoard.pushHighlight(7,8);
-    myTestBoard.pushHighlight(1,2);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
     glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
     glfwSetCursorPosCallback(window, input::mousePositionUpdateCallback);
     glfwSetMouseButtonCallback(window, input::mouseButtonCallback);
-    *input::getMouseEvent() += mouseListener;
     // main game loop //
     while(!glfwWindowShouldClose(window)) {
         glClearColor(0.1f, 0.2f, 0.2f, 1.0f);

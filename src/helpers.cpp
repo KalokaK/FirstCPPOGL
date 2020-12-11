@@ -2,18 +2,18 @@
 // Created by kaloka on 14/11/2020.
 //
 
-#include <glad/glad.h>
 #include "helpers.h"
-#include <fstream>
-#include <time.h>
-#include "calibri.c"
-#include "functional"
+
+// this code base was originally created for a hangman project I did with a friend of mine.
+// was my first CPP project and both our intro to open gl. a lot of this is ... deprecated , unused ect
+// same goes for event, though I wrote that later.
 
 namespace helpers {
     void framebufferSizeCallback(GLFWwindow *glfwWindow, int width, int height) {
         glViewport(0, 0, width, height);
     }
 }
+// this used to be a generalized but unfinished input system for the hangman thing...
 /*
 namespace input {
     void setupGlfwInputCallbacks(GLFWwindow *window, inputHandler *handler) {
@@ -95,46 +95,48 @@ namespace input {
     }
 }
 */
+// this code was not originally written by me. though I can explain what it does
+// a lot of this is also straight forom the learopengl tutorial
 namespace shaders
 {
     unsigned int load_shader(const char* filename, int shadertype)
     {
         std::ifstream file(filename, std::ios::in | std::ios::binary);
 
-        file.seekg(0, file.end);
+        file.seekg(0, file.end); // get end
 
-        int len = file.tellg();
+        int len = file.tellg(); // how many chars in to file?
 
-        file.seekg(file.beg);
+        file.seekg(file.beg); // go back to start
 
-        char* code = new char[len + 1];
+        char* code = new char[len + 1]; // out buffer for shader code
 
-        file.read(code, len);
+        file.read(code, len); // load shader code
 
         code[len] = '\0';
 
         unsigned int out = glCreateShader(shadertype);
 
-        glShaderSource(out, 1, &code, NULL);
+        glShaderSource(out, 1, &code, NULL); // buffer shader
 
-        glCompileShader(out);
+        glCompileShader(out); // compile
 
         // printf(filename);
         // printf(" :\n");
         // printf(code);
         // printf("\n");
 
-        file.close();
+        file.close(); // no longer need code source
 
-        int  success;
+        int  success; // shader done
         glGetShaderiv(out, GL_COMPILE_STATUS, &success);
-        if(!success)
+        if(!success) // if not print error
         {
             char infoLog[512];
             glGetShaderInfoLog(out, 512, NULL, infoLog);
             printf("compilation of  %s  failed\n%s\n\n%s\n", filename, infoLog, code);
             delete[] code;
-            throw "shader compilation failed";
+            throw "shader compilation failed"; // and throw... this is borked... // it does throw just not how we want it ot
         }
         delete[] code;
 
@@ -144,19 +146,19 @@ namespace shaders
 
     unsigned int shader_program(const char *vertShaderLoc, const char *fragShaderLoc)
     {
-        unsigned int shader[2];
+        unsigned int shader[2]; // two shaders
 
         unsigned int out = glCreateProgram();
         shader[0] = load_shader(vertShaderLoc, GL_VERTEX_SHADER);
         glAttachShader(out, shader[0]);
         shader[1] = load_shader(fragShaderLoc, GL_FRAGMENT_SHADER);
         glAttachShader(out, shader[1]);
-        glLinkProgram(out);
+        glLinkProgram(out); // make program // done
 
         glDeleteShader(shader[0]);
-        glDeleteShader(shader[1]);
+        glDeleteShader(shader[1]); // no longer need those we have program
 
-        int success;
+        int success; // error check same as load shader
         glGetProgramiv(out, GL_LINK_STATUS, &success);
 
         if(!success) {
@@ -269,7 +271,7 @@ namespace sprites
     }
 
     void Text::draw(unsigned int shader)
-    {
+    { // oh god this code.... y...
         glUseProgram(shader);
         float vertices[] = {
         // positions          // colors           // texture coords

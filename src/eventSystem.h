@@ -8,4 +8,5 @@
 #define EVENTS_DEFINED_T
 #include <vector>
 #include "eventSystem.cxx"
+// I think this might be the only thing that works.
 #endif //OGLHANGMAN_EVENTSYSTEM_H
