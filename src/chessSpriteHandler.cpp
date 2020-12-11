@@ -42,7 +42,7 @@ void chessSprites::SpriteBoard::draw(unsigned int shader) {
     boardSprite->draw(shader);
     for (auto loc : highlight) {
         glUseProgram(glowShader);
-        glUniform1i(glGetUniformLocation(glowShader, "field"), loc);
+        glUniform1i(glGetUniformLocation(glowShader, "field"), abs(loc - 63*turn));
         glUniform1i(glGetUniformLocation(glowShader, "text"), 0);
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, glowTex);
@@ -93,7 +93,10 @@ void chessSprites::SpriteBoard::setTurn(bool turn) {
     updateSpriteData();
 }
 
-void chessSprites::SpriteBoard::pushHighlight(int x, int y) {
-    highlight.push_back((y - 1) * 8 + x - 1);
+void chessSprites::SpriteBoard::move(int player, int from, int to) {
+    if (!board[to / 8][to % 8]) delete board[to / 8][to % 8];
+    board[to / 8][to % 8] = board[from / 8][from % 8];
+    board[from / 8][from % 8] = nullptr;
+    updateSpriteData();
 }
 

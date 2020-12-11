@@ -21,8 +21,7 @@ set(SOURCE_FILES
         src/chessSpriteHandler.cpp
         src/chessSpriteHandler.h
         src/input.cpp
-        src/input.h
-        src/uiElements.cpp src/uiElements.h)
+        src/input.h src/move.cpp src/move.h src/chess.h src/chess.cpp)
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 
 target_include_directories(Google_Tests_run PRIVATE src)

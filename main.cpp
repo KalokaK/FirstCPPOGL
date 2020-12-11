@@ -7,6 +7,7 @@
 #include "glBoilerplateAndHelpers/texture.h"
 #include <chessSpriteHandler.h>
 #include <input.h>
+#include <move.h>
 int XRES = 800;
 int YRES = 800;
 void mouseListener (GLFWwindow *window,double x, double y, int button, int action, int mods) {
@@ -106,25 +107,24 @@ int main(int argc, char* argv[]) {
     chessSprites::SpriteBoard::setupBoard(&myTestBoard, chessTextureMapping);
     myTestBoard.boardScale = 1.f;
     myTestBoard.boardY = 0.2;
-    myTestBoard.setTurn(true);
     myTestBoard.boardSprite->setSpriteAttrib(COLOR, f);
     myTestBoard.updateSpriteData();
+    auto myGameManager = move::GameHandler(&myTestBoard);
+    input::init(window, &myTestBoard.boardScale, &myTestBoard.boardX, &myTestBoard.boardY, new input::EventActionsHolderClass(), &myGameManager);
+    chess::init();
+    move::moveEvent()->add([](int player, int from, int to){chess::move(player, from, to);});
+    move::moveEvent()->add(&chessSprites::SpriteBoard::move, &myTestBoard);
+
     spriteUpdate.add(&chessSprites::SpriteBoard::draw, &myTestBoard);
     // setup input //
     // //
     // set viewport rect //
     glViewport(0, 0, 800, 800);
-    int glowX = 3;
-    int glowY = 5;
-    myTestBoard.pushHighlight(3,5);
-    myTestBoard.pushHighlight(7,8);
-    myTestBoard.pushHighlight(1,2);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
     glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
     glfwSetCursorPosCallback(window, input::mousePositionUpdateCallback);
     glfwSetMouseButtonCallback(window, input::mouseButtonCallback);
-    *input::getMouseEvent() += mouseListener;
     // main game loop //
     while(!glfwWindowShouldClose(window)) {
         glClearColor(0.1f, 0.2f, 0.2f, 1.0f);
