@@ -10,6 +10,7 @@ namespace move {
     void GameHandler::fieldClickListener(int field) {
         printf("filed listenner call %i", field);
         chess::piece pieceAtField = chess::getPiece(field);
+        // if no piece is selected or the move from piece to field is legal -> select the field
         selectedField = field;
         if (pieceAtField.type != chess::none && pieceAtField.colour == turn && selectedPiece == -1) spriteBoard->highlight = chess::legalMoves(field);
     }
@@ -48,12 +49,16 @@ namespace move {
             waitForConvert = -1;
         } else if (!gameOver && selectedField > -1) {
             chess::piece atSelected = chess::getPiece(selectedField);
-            if (character == char('E') && waitForConvert < 0) { // enter
-                if (selectedField >= 0 && atSelected.colour == turn &&
-                    atSelected.type != chess::none && selectedPiece == -1 && chess::canMove(selectedField)) {
-                    selectedPiece = selectedField; // select piece at
+            if (character == char('E') &&
+                waitForConvert < 0) { // accept button // and not waiting for conversion of pawn
+                if (atSelected.colour == turn && // same color
+                    atSelected.type != chess::none && // and not empty
+                    selectedPiece == -1 && // and no piece is set
+                    chess::canMove(selectedField)) { // and that piece can actually move
+                    selectedPiece = selectedField; // set the selected piece
                     selectedField = -1; // unselect field
-                } else if (selectedField >= 0) { // something is selected
+                } else if (chess::legal(turn, selectedPiece,
+                                        selectedField)) { // the move would be legal // move from or to -1 is not!
                     moveEventBackend(turn, selectedPiece, selectedField); // tell stuff to move
                     turn = !turn; // switch turn
                     if (atSelected.type == chess::pawn) waitForConvert = selectedField;
