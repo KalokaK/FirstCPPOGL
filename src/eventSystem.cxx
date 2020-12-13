@@ -4,8 +4,8 @@
 
 #ifndef EVENTS_DEFINED_T
 #include "eventSystem.h"
-
 #else
+// OH GOD NON OF THIS IS COMMENTED // this could also use some improvements
 namespace events {
     template <typename ...T>
     class functionWrapperBase {

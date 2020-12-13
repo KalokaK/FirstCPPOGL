@@ -1,5 +1,11 @@
+//
+// Created by kaloka on 10/12/2020.
+//
+
 #ifndef CHESS_H
 #include <vector>
+#include <iostream>
+
 
 #define CHESS_H
 #define white 0
@@ -17,9 +23,9 @@
 
         white
 */
-namespace chess{
+namespace chess {
 
-    typedef enum piecetype{
+    typedef enum piecetype {
         none,
         pawn,
         rook,
@@ -29,20 +35,28 @@ namespace chess{
         king
     };
 
-    struct piece
-    {
+    struct piece {
+        piece();
+        piece(piecetype type, int colour);
         piecetype type = none;
         int colour; // false is black, true is white
     };
 
-    void init();                    // initializes everything
-    std::vector<int> moves(int pos); // gives all possible moves fromthat position
-    piece piece_at(int pos);        // returns piece at position
+    // there is some global state in chess.cpp, did not have time to make a class out of it
+    void init();  // setup
+    std::vector<int> moves(int pos); // gives all possible moves from that position
+    std::vector<int> legalMoves(int pos);
+    piece getPiece(int pos);        // returns piece at position
+    void setPiece(int pos, piece it);
+    bool canMove(int piece);
+
     bool legal(int player, int from, int to);  // checks if move from from to to is legal
-    bool move(int player, int from, int to); // checks if move legal and performs move + returns true if yes returns false if no
-    int win(); // return -1 if no, 0 if white, 1 if black
-    bool king_is_threatened(int colour); // checks whether coloured king is threatened
-    bool castling_possible(int player, int king, int rook);
-    bool castle(int player, int king, int rook);
+    bool move(int player, int from,
+              int to); // checks if move legal and performs move + returns true if yes returns false if no
+    bool gameOver(bool player); // return -1 if no, 0 if white, 1 if black
+    bool kingIsThreatened(int colour); // checks whether king of color is threatened
+    bool castlingPossible(int player, int king, int rook); // can castle, internal
+    bool castle(int player, int king, int rook); // castle // internal
+    int getScore(bool player);
 }
 #endif // CHESS_H

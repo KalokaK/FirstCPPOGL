@@ -20,15 +20,15 @@ void input::mousePositionUpdateCallback(GLFWwindow *window, double x, double y) 
 }
 
 void input::mouseButtonCallback(GLFWwindow *window, int button, int action, int mods) {
-    int width, height;
+    int width, height; // ah yes and then there is this horrid code. converts to coors in board...
     glfwGetWindowSize(window, &width, &height);
     auto y = mouseY;
     auto x = mouseX;
     //to ndc
-    x /= (float)width;
-    x -= 0.5;
-    x*=2;
-    y /= (float)height;
+    x /= (float)width; // normalize
+    x -= 0.5; // center
+    x*=2; // -1 to 1
+    y /= (float)height; // see x
     y-=0.5;
     y*=-2;
     //distance to bottom left

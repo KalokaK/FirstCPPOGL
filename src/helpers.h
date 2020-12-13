@@ -11,6 +11,9 @@
 #include <typeinfo>
 #include "calibri.c"
 #include <eventSystem.h>
+#include <ctime>
+#include "functional"
+#include <fstream>
 
 namespace helpers {
     void framebufferSizeCallback(GLFWwindow *glfwWindow, int width, int height);
