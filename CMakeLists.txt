@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(OGLhangman)
+project(ChessGL)
 
 find_package(OpenGL REQUIRED)
 
