@@ -23,7 +23,8 @@ namespace chessSprites{
         void updateSpriteData();
         void draw(unsigned int shader);
 
-        static void setupBoard(chessSprites::SpriteBoard *board, std::map<std::string, unsigned int> *pieceTextureLookup);
+        void setupBoard(chessSprites::SpriteBoard *board, std::map<std::string, unsigned int> *pieceTextureLookup);
+
     private:
         unsigned int glowTex;
         unsigned int glowShader;
@@ -32,6 +33,8 @@ namespace chessSprites{
         bool isTurn() const;
 
         void setTurn(bool turn);
+
+        std::map<string, unsigned int> *textureLookup;
     };
 }
 #endif //OGLHANGMAN_CHESSSPRITEHANDLER_H

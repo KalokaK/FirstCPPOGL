@@ -108,7 +108,7 @@ int main(int argc, char* argv[]) {
     // create the sprite board... this should really be in game manager
     auto boardSprite = sprite((*chessTextureMapping)["chess.png"], 0, 0);
     auto myTestBoard = chessSprites::SpriteBoard(&boardSprite);
-    chessSprites::SpriteBoard::setupBoard(&myTestBoard, chessTextureMapping);
+    myTestBoard.setupBoard(&myTestBoard, chessTextureMapping);
     myTestBoard.boardScale = 1.f;
     myTestBoard.boardY = 0.2;
     myTestBoard.boardSprite->setSpriteAttrib(COLOR, f);

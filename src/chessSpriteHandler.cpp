@@ -63,6 +63,7 @@ void chessSprites::SpriteBoard::draw(unsigned int shader) {
 
 void
 chessSprites::SpriteBoard::setupBoard(chessSprites::SpriteBoard *board, std::map<std::string, unsigned int> *pieceTextureLookup) {
+    textureLookup = pieceTextureLookup;
     auto boardRef = board->board;
     for (int pawn = 0; pawn <= 7; pawn++) {
         boardRef[1][pawn] = new sprite((*pieceTextureLookup)["w_pawn_png_1024px.png"], 0, 0);
