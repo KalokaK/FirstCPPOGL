@@ -1,6 +1,7 @@
 //
 // Created by kaloka on 16/11/2020.
 //
+#include <typeinfo>
 
 #ifndef EVENTS_DEFINED_T
 #include "eventSystem.h"

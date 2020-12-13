@@ -307,6 +307,8 @@ namespace chess {
 
         board[king].type = none;
         board[rook].type = none;
+
+        return true;
     }
 
     bool gameOver(bool player) {
