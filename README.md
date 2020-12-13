@@ -1,4 +1,3 @@
-# OGLhangman
-a very basic project.
+# OpenGL Chess
 
-has an event system, input system
+Thou who read this message, gather thy spirits and read my horrid code!
