@@ -165,7 +165,7 @@ namespace chess {
     std::vector<int> legalMoves(int pos) {
         std::vector<int> out = moves(pos);
         for (auto i = out.begin(); i != out.end(); ) {
-            if (!legal(board[pos].colour, pos, *i)) out.erase(i);
+            if (!legal(board[pos].colour, pos, *i)) i = out.erase(i);
             else i++;
         }
         return out;
@@ -238,16 +238,16 @@ namespace chess {
     bool move(int player, int from, int to) {
         bool can_move = legal(player, from, to); // is legal
         if (!can_move) return false; // if not -> sike
+        if (to == last_enpassant) { // perform enpassant
+            score[board[from].colour] += worth[board[last_enpassant_victim].type]; // move
+            board[last_enpassant_victim].type = none; // delvic
+        }
         if (board[from].type == pawn) {
             if (abs(from - to) == 16) { // moving two steps
-                last_enpassant = from + 8 * ((board[from].colour == white) * 2 - 1); // field behind post move
                 last_enpassant_victim = to; // we could now be stabbed. sad
             } else last_enpassant = -1; // else no chance for en passant
-            if (to == last_enpassant) { // perform enpassant
-                score[board[from].colour] += worth[board[last_enpassant_victim].type]; // move
-                board[last_enpassant_victim].type = none; // delvic
-            }
         }
+        last_enpassant = from + 8 * ((board[from].colour == white) * 2 - 1); // field behind post move
 
         if (board[from].type == king) { //
             castling_moved[player][0] = true; // the king has been moved

@@ -11,7 +11,7 @@ namespace move {
         printf("filed listenner call %i", field);
         chess::piece pieceAtField = chess::getPiece(field);
         // if no piece is selected or the move from piece to field is legal -> select the field
-        selectedField = field;
+        selectedField = field + (waitForConvert > -1) * (selectedField - field);
         if (pieceAtField.type != chess::none && pieceAtField.colour == turn && selectedPiece == -1) spriteBoard->highlight = chess::legalMoves(field);
     }
 
@@ -77,11 +77,10 @@ namespace move {
                 } else if (chess::legal(turn, selectedPiece,
                                         selectedField)) { // the move would be legal // move from or to -1 is not!
                     moveEventBackend(turn, selectedPiece, selectedField); // tell stuff to move
-                    if (chess::getPiece(selectedPiece).type == chess::pawn &&
-                        selectedField + turn * 56 < 7 &&
-                        selectedField + turn * 56 > -1) {
+                    if (chess::getPiece(selectedField).type == chess::pawn /* &&
+                            (selectedField < 8 ||
+                             selectedField > 55)*/) {
                         waitForConvert = selectedField;
-                        displayText->h /= 1.3;
                     }
                     turn = !turn; // switch turn
                     gameOver = chess::gameOver(turn);
