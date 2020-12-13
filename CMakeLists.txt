@@ -15,7 +15,13 @@ set(SOURCE_FILES
         src/glad.c
         src/helpers.cpp
         src/glBoilerplateAndHelpers/sprite.cpp
-        src/glBoilerplateAndHelpers/sprite.h src/glBoilerplateAndHelpers/texture.cpp src/glBoilerplateAndHelpers/texture.h)
+        src/glBoilerplateAndHelpers/sprite.h
+        src/glBoilerplateAndHelpers/texture.cpp
+        src/glBoilerplateAndHelpers/texture.h
+        src/chessSpriteHandler.cpp
+        src/chessSpriteHandler.h
+        src/input.cpp
+        src/input.h src/move.cpp src/move.h src/chess.h src/chess.cpp)
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 
 target_include_directories(Google_Tests_run PRIVATE src)
@@ -26,10 +32,6 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${GLFW_INCLUDE_DIRS} ${
 
 set(WORKING_DIRECTORY ${CMAKE_HOME_DIRECTORY}/src)
 
-file(COPY hangman DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-file(COPY hangman DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/Debug)
-
-# shaders 
-configure_file(src/vertshader.vert vertshader.vert COPYONLY)
-configure_file(src/fragshader.frag fragshader.frag COPYONLY)
-configure_file(nouns.txt nouns.txt COPYONLY)
+file(COPY src/shaders DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY chess-sprites DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY glow.png DESTINATION ${CMAKE_CURRENT_BINARY_DIR})

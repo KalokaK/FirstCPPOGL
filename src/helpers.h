@@ -11,28 +11,34 @@
 #include <typeinfo>
 #include "calibri.c"
 #include <eventSystem.h>
+#include <ctime>
+#include "functional"
+#include <fstream>
 
 namespace helpers {
     void framebufferSizeCallback(GLFWwindow *glfwWindow, int width, int height);
-    void render();
-    std::string get_word();
 }
 
 using events::event;
+/*
 namespace input {
-    struct inputActionEventsHolder {
-        inputActionEventsHolder();
-        event<void> accept;
-        event<float, float> move4Axis;
-        event<void> reload;
-        event<char> genericCharacterEvent;
-        event<void> close;
-        event<void> back;
+    struct PerformableInputActionsBase {
+        PerformableInputActionsBase();
+        void bind();
+        void unbind();
+        virtual void keypressCallback(GLFWwindow *window, int key, int scancode, int action, int mods);
+        virtual void characterCallback(GLFWwindow *window, unsigned int codepoint);
+        virtual void mouseButtonCallback(GLFWwindow *window, int key, int action, int mods);
+        virtual void mouseMoveCallback(GLFWwindow *window, double posX, double posY);
     };
 
     struct inputHandler {
+    private:
+        PerformableInputActionsBase * inputActionHolder;
     public:
-        inputActionEventsHolder inputActionHolder;
+        [[nodiscard]] PerformableInputActionsBase *getInputActionHolder() const;
+        void setInputActionHolder(PerformableInputActionsBase *inputActionHolder);
+    public:
         static bool glfwBound;
         inputHandler();
         ~inputHandler();
@@ -40,24 +46,22 @@ namespace input {
     public:
         static void keypressEventCaller(GLFWwindow *window, int key, int scancode, int action, int mods);
         static void characterEventCaller(GLFWwindow *window, unsigned int codepoint);
+        static void mouseButtonEventCaller(GLFWwindow *window, int key, int action, int mods);
+        static void mouseMoveEventCaller(GLFWwindow *window, double posX, double posY);
 
     private:
-        void keypressCallback(GLFWwindow *window, int key, int scancode, int action, int mods);
-        void characterCallback(GLFWwindow *window, unsigned int codepoint);
         static event<GLFWwindow *, int, int, int, int> keypressEvent;
         static event<GLFWwindow *, unsigned int> characterEvent;
-        void preprocessGenericCharacter(unsigned int codepoint);
+        static event<GLFWwindow *, double, double> mouseMovementEvent;
+        static event<GLFWwindow *, int, int, int> mouseButtonEvent;
     };
     void setupGlfwInputCallbacks(GLFWwindow *window, input::inputHandler *handler);
 }
-
+*/
 namespace shaders
 {
-    constexpr const char* vertshader_loc = "vertshader.vert";
-    constexpr const char* fragshader_loc = "fragshader.frag";
-
     unsigned int load_shader(const char* filename, int shadertype);
-    unsigned int shader_program();
+    unsigned int shader_program(const char *vertShaderLoc, const char *fragShaderLoc);
 }
 
 namespace sprites
@@ -90,7 +94,7 @@ namespace sprites
         void setText(std::string newtext);
         std::string getText();
 
-        void draw(unsigned int shader);
+        void draw(unsigned int shader) override;
 
     private:
         std::string text = "";
@@ -98,6 +102,4 @@ namespace sprites
     };
 
 };
-
-
 #endif //OGLHANGMAN_HELPERS_H
