@@ -3,13 +3,17 @@
 Thou who read this message, gather thy spirits and read my horrid code! <br>
 
 At the start of this project I had never written C++ in my life! <br>
-This was a great learning experience, and I appreciate the colaboration wiht @HannibalBarkas. <br>
+This was a great learning experience, and I appreciate the colaboration wiht @HannibalBarkas, my partner in crime. <br>
+And a crime it is.  <br>
 However, given this neither the code nor the structure is in any way shape or form consisten or clean. <br>
 Be prepared! <br>
 
 #### OpenGl note
 Most of the opengl code builds heavily on https://learnopengl.com/Getting-started/OpenGL <br>
 Basic opengl knowledge is required, however, this does not go beyond basic <br>
+
+#### Horrid Markdown
+I have now for the first time looked at markdown. It shows. For your eyes I pray, oh reader. 
 
 ## Project Structure
 
@@ -24,7 +28,7 @@ src/* --- source code.  <br>
 ||   text.* --- same for text <br>
 ||   ui.* --- missing feature. did not have time to clean the entire codebase. <br>
 ||   calibri.c --- texture map for text created with piskel. Thanks to @Sivecano, he created the text system in an earlier project with me <br>
-||   chess.* --- chess backend. ALMOST stateless. but sorta messy. I guess its pretty efficient though... only thing it is <br>
+||   chess.* --- chess backend. but sorta messy. I guess its pretty efficient though... only thing it is <br>
 ||   chessSpriteHandler.* --- uhhh... a really dumb way of rendering a chessboard. As everything here, totally under and over built at the same time. <br>
 ||   eventSystem.* --- An event system taken from a project with @Sivecano. It's use here is totally unnecessary. Writing it was my introduction to function pointers, i thought it was cool, that is why its here. <br>
 ||   glad.c -- OpenGl bindings generated with https://glad.dav1d.de/ <br>
@@ -49,3 +53,8 @@ uhh beware the detached heads, submodules and other horrible stuff. might also n
 ## build n stuff
 might create a release <br>
 else build with cmake, was coded in clion, should work on Code OSS and microsofts version of it.
+
+## contributors
+Me -- KalokaK, graphics, chess backend, input <br>
+My collaborator on this project -- HannibalBarkas, original backend <br>
+My friend and windows tester -- Sivecano, minor windows fixes, texture loader, text system <br>
