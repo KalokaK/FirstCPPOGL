@@ -49,3 +49,8 @@ uhh beware the detached heads, submodules and other horrible stuff. might also n
 ## build n stuff
 might create a release <br>
 else build with cmake, was coded in clion, should work on Code OSS and microsofts version of it.
+
+## contributors
+Me -- KalokaK, graphics, chess backend, input
+My collaborator on this project -- HannibalBarkas, original backend
+My friend and windows tester -- Sivecano, minor windows fixes, texture loader, text system
