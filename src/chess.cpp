@@ -238,16 +238,17 @@ namespace chess {
     bool move(int player, int from, int to) {
         bool can_move = legal(player, from, to); // is legal
         if (!can_move) return false; // if not -> sike
-        if (to == last_enpassant) { // perform enpassant
-            score[board[from].colour] += worth[board[last_enpassant_victim].type]; // move
-            board[last_enpassant_victim].type = none; // delvic
-        }
         if (board[from].type == pawn) {
+            if (to == last_enpassant) { // perform enpassant
+                score[board[from].colour] += worth[board[last_enpassant_victim].type]; // move
+                board[last_enpassant_victim].type = none; // delvic
+            }
             if (abs(from - to) == 16) { // moving two steps
                 last_enpassant_victim = to; // we could now be stabbed. sad
-            } else last_enpassant = -1; // else no chance for en passant
+                last_enpassant = from + 8 * ((board[from].colour == white) * 2 - 1); // field behind post move
+            }
+            else last_enpassant = -1; // else no chance for en passant
         }
-        last_enpassant = from + 8 * ((board[from].colour == white) * 2 - 1); // field behind post move
 
         if (board[from].type == king) { //
             castling_moved[player][0] = true; // the king has been moved
