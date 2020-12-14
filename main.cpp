@@ -10,23 +10,6 @@
 #include <move.h>
 int XRES = 800;
 int YRES = 800;
-void mouseListener (GLFWwindow *window,double x, double y, int button, int action, int mods) {
-    x /= (float)XRES;
-    x -= 0.5;
-    x*=2;
-    y /= (float)YRES;
-    y-=0.5;
-    y*=-2;
-    x -= 0 - 0.5 * 1; // unhard
-    y -= 0.2 - 0.5 * 1;
-    x *= 8 / 1;
-    y *= 8 / 1;
-    x = (int)x;
-    y = (int)y;
-    x = (0 <= x && x <= 7) && (0 <= y && y <= 7) ? x : -1;
-    y = (0 <= y && y <= 7) && (0 <= x && x <= 7) ? y : -1;
-    std::cout << "x: " << x  << "y: " << y  << std::endl;
-}
 
 std::string guess;
 std::string word;
@@ -55,7 +38,7 @@ int main(int argc, char* argv[]) {
     // //
 
     // make glfw window //
-    GLFWwindow * window = glfwCreateWindow(800, 800, "hangman", nullptr, nullptr);
+    GLFWwindow * window = glfwCreateWindow(XRES, YRES, "hangman", nullptr, nullptr);
     if (window == nullptr) {
         glfwTerminate();
         throw "no glfw window created this is bad, check dependencies";
@@ -95,7 +78,7 @@ int main(int argc, char* argv[]) {
     auto chessTextureMapping = chessSprites::GetChessTextures();
     auto spriteUpdate = event<unsigned int>();
     auto textUpdate = event<unsigned int>();
-    auto uiUpdate = event<unsigned int>();
+    auto uiUpdate = event<unsigned int>(); // uh... not used. there was supposed to be an UI system.
     //
     // the god-awful text system. I guess it works.
     // should really be done with a shader -> see "shaders/highlight.*" something like those
@@ -119,7 +102,7 @@ int main(int argc, char* argv[]) {
     input::init(window, &myTestBoard.boardScale, &myTestBoard.boardX, &myTestBoard.boardY, new input::EventActionsHolderClass(), &myGameManager);
     chess::init();
     //
-    // originally there were supposed to be more listeners
+    // originally there were supposed to be more listeners, currently using an event system makes 0 sense.
     move::moveEvent()->add([](int player, int from, int to){chess::move(player, from, to);});
     move::moveEvent()->add(&chessSprites::SpriteBoard::move, &myTestBoard);
     //
@@ -127,15 +110,15 @@ int main(int argc, char* argv[]) {
     // setup input //
     // //
     // set viewport rect //
-    glViewport(0, 0, 800, 800);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+    glViewport(0, 0, XRES, YRES);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER); // texture wrapping. For some shader funk with the highlighting code.
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
     glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
     glfwSetCursorPosCallback(window, input::mousePositionUpdateCallback);
     glfwSetMouseButtonCallback(window, input::mouseButtonCallback);
     // main game loop //
     while(!glfwWindowShouldClose(window)) {
-        glClearColor(0.1f, 0.2f, 0.2f, 1.0f);
+        glClearColor(0.1f, 0.2f, 0.2f, 1.0f); // rgba background
         glClear(GL_COLOR_BUFFER_BIT);
         spriteUpdate(spriteProg);
         textUpdate(textProg);

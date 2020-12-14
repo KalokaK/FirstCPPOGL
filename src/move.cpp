@@ -28,39 +28,32 @@ namespace move {
 
     void GameHandler::textInputListener(char character) {
         if (waitForConvert > -1) {
-            delete spriteBoard->board[waitForConvert / 8][waitForConvert % 8];
+            std::string spriteText;
+            chess::piece thePiece;
             switch (character) {
                 case 'Q': // uh... at this point making things stateless in chess would be much easier....
-                    chess::setPiece(waitForConvert,
-                                    chess::piece(chess::queen, chess::getPiece(waitForConvert).colour));
-                    spriteBoard->board[waitForConvert / 8][waitForConvert % 8]
-                            = new sprite(spriteBoard->textureLookup->
-                            operator[](!turn ? "b_queen_png_1024px.png" : "w_queen_png_1024px.png"), 0, 0);
+                    thePiece = chess::piece(chess::queen, chess::getPiece(waitForConvert).colour);
+                    spriteText = !turn ? "b_queen_png_1024px.png" : "w_queen_png_1024px.png";
                     break;
                 case 'R':
-                    chess::setPiece(waitForConvert,
-                                    chess::piece(chess::rook, chess::getPiece(waitForConvert).colour));
-                    spriteBoard->board[waitForConvert / 8][waitForConvert % 8]
-                            = new sprite(spriteBoard->textureLookup->
-                            operator[](!turn ? "b_rook_png_1024px.png" : "w_rook_png_1024px.png"), 0, 0);
+                    thePiece = chess::piece(chess::queen, chess::getPiece(waitForConvert).colour);
+                    spriteText = !turn ? "b_rook_png_1024px.png" : "w_rook_png_1024px.png";
                     break;
                 case 'K':
-                    chess::setPiece(waitForConvert,
-                                    chess::piece(chess::knight, chess::getPiece(waitForConvert).colour));
-                    spriteBoard->board[waitForConvert / 8][waitForConvert % 8]
-                            = new sprite(spriteBoard->textureLookup->
-                            operator[](!turn ? "b_knight_png_1024px.png" : "w_knight_png_1024px.png"), 0, 0);
+                    thePiece = chess::piece(chess::queen, chess::getPiece(waitForConvert).colour);
+                    spriteText = !turn ? "b_knight_png_1024px.png" : "w_knight_png_1024px.png";
                     break;
                 case 'B':
-                    chess::setPiece(waitForConvert,
-                                    chess::piece(chess::bishop, chess::getPiece(waitForConvert).colour));
-                    spriteBoard->board[waitForConvert / 8][waitForConvert % 8]
-                            = new sprite(spriteBoard->textureLookup->
-                            operator[](!turn ? "b_bishop_png_1024px.png" : "w_bishop_png_1024px.png"), 0, 0);
+                    thePiece = chess::piece(chess::queen, chess::getPiece(waitForConvert).colour);
+                    spriteText = !turn ? "b_bishop_png_1024px.png" : "w_bishop_png_1024px.png";
                     break;
                 default:
-                    break;
+                    return;
             }
+            delete spriteBoard->board[waitForConvert / 8][waitForConvert % 8];
+            chess::setPiece(waitForConvert, thePiece);
+            spriteBoard->board[waitForConvert / 8][waitForConvert % 8] =
+                    new sprite((*spriteBoard->textureLookup)[spriteText], 0, 0);
             waitForConvert = -1;
             spriteBoard->updateSpriteData();
             displayText->setText(std::string((bool) turn ? "black" : "white") + "s' turn");
@@ -77,9 +70,9 @@ namespace move {
                 } else if (chess::legal(turn, selectedPiece,
                                         selectedField)) { // the move would be legal // move from or to -1 is not!
                     moveEventBackend(turn, selectedPiece, selectedField); // tell stuff to move
-                    if (chess::getPiece(selectedField).type == chess::pawn /* &&
+                    if (chess::getPiece(selectedField).type == chess::pawn  &&
                             (selectedField < 8 ||
-                             selectedField > 55)*/) {
+                             selectedField > 55)) {
                         waitForConvert = selectedField;
                     }
                     turn = !turn; // switch turn
