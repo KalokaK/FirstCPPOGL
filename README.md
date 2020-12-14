@@ -51,11 +51,12 @@ uhh beware the detached heads, submodules and other horrible stuff. might also n
 ~~no one needs windows anyway ew what a gross OS~~
 
 ## build n stuff
-might create a release <br>
+for windows, look at release <br>
 else build with cmake, was coded in clion, should work on Code OSS and microsofts version of it. <br>
 Dont forget <br>
 `git submodule init` <br>
 `git submodule update` <br>
+Run from build dir if you compile <br>
 ## contributors
 Me -- KalokaK, graphics, chess backend, input <br>
 My collaborator on this project -- HannibalBarkas, original backend <br>
