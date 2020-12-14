@@ -51,6 +51,6 @@ might create a release <br>
 else build with cmake, was coded in clion, should work on Code OSS and microsofts version of it.
 
 ## contributors
-Me -- KalokaK, graphics, chess backend, input
-My collaborator on this project -- HannibalBarkas, original backend
-My friend and windows tester -- Sivecano, minor windows fixes, texture loader, text system
+Me -- KalokaK, graphics, chess backend, input <br>
+My collaborator on this project -- HannibalBarkas, original backend <br>
+My friend and windows tester -- Sivecano, minor windows fixes, texture loader, text system <br>
