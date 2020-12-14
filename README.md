@@ -28,7 +28,7 @@ src/* --- source code.  <br>
 ||   text.* --- same for text <br>
 ||   ui.* --- missing feature. did not have time to clean the entire codebase. <br>
 ||   calibri.c --- texture map for text created with piskel. Thanks to @Sivecano, he created the text system in an earlier project with me <br>
-||   chess.* --- chess backend. ALMOST stateless. but sorta messy. I guess its pretty efficient though... only thing it is <br>
+||   chess.* --- chess backend. but sorta messy. I guess its pretty efficient though... only thing it is <br>
 ||   chessSpriteHandler.* --- uhhh... a really dumb way of rendering a chessboard. As everything here, totally under and over built at the same time. <br>
 ||   eventSystem.* --- An event system taken from a project with @Sivecano. It's use here is totally unnecessary. Writing it was my introduction to function pointers, i thought it was cool, that is why its here. <br>
 ||   glad.c -- OpenGl bindings generated with https://glad.dav1d.de/ <br>
