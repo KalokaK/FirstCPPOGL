@@ -38,7 +38,7 @@ int main(int argc, char* argv[]) {
     // //
 
     // make glfw window //
-    GLFWwindow * window = glfwCreateWindow(XRES, YRES, "hangman", nullptr, nullptr);
+    GLFWwindow * window = glfwCreateWindow(XRES, YRES, "ChessGL", nullptr, nullptr);
     if (window == nullptr) {
         glfwTerminate();
         throw "no glfw window created this is bad, check dependencies";
