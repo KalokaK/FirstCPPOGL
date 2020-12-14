@@ -3,7 +3,8 @@
 Thou who read this message, gather thy spirits and read my horrid code! <br>
 
 At the start of this project I had never written C++ in my life! <br>
-This was a great learning experience, and I appreciate the colaboration wiht @HannibalBarkas. <br>
+This was a great learning experience, and I appreciate the colaboration wiht @HannibalBarkas, my partner in crime. <br>
+And a crime it is.  <br>
 However, given this neither the code nor the structure is in any way shape or form consisten or clean. <br>
 Be prepared! <br>
 
