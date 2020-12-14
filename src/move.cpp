@@ -99,8 +99,8 @@ namespace move {
 
                     for (int i = 0; i < 64; i++) { // uh last min fix for enpassant rendering
                         if(chess::getPiece(i).type == chess::none)
-                            if (spriteBoard->board[i / 8][i % 8])
-                                delete spriteBoard->board[i / 8][i % 8]; // if not nullptr;
+                            if (spriteBoard->board[i / 8][i % 8] != nullptr) {
+                                delete spriteBoard->board[i / 8][i % 8]; spriteBoard->board[i / 8][i % 8] = nullptr; }
                     }
                 }
             }
