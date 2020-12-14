@@ -96,6 +96,12 @@ namespace move {
                     spriteBoard->highlight.clear(); // no highlights
                     selectedField = -1; // unselect
                     selectedPiece = -1;
+
+                    for (int i = 0; i < 64; i++) { // uh last min fix for enpassant rendering
+                        if(chess::getPiece(i).type == chess::none)
+                            if (spriteBoard->board[i / 8][i % 8])
+                                delete spriteBoard->board[i / 8][i % 8]; // if not nullptr;
+                    }
                 }
             }
         }

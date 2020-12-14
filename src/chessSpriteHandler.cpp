@@ -95,7 +95,7 @@ void chessSprites::SpriteBoard::setTurn(bool turn) {
 }
 
 void chessSprites::SpriteBoard::move(int player, int from, int to) {
-    if (!board[to / 8][to % 8]) delete board[to / 8][to % 8];
+    if (board[to / 8][to % 8]) delete board[to / 8][to % 8]; // if not nullptr
     board[to / 8][to % 8] = board[from / 8][from % 8];
     board[from / 8][from % 8] = nullptr;
     updateSpriteData();
